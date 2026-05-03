@@ -1,0 +1,287 @@
+[
+  {
+    "name": "Varanasi",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "currentRep": "Narendra Modi",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Narendra Modi", "party": "BJP", "votes": 612970, "margin": 152513, "turnout": 54.28},
+      {"year": 2019, "winner": "Narendra Modi", "party": "BJP", "votes": 674664, "margin": 479505, "turnout": 55.28},
+      {"year": 2014, "winner": "Narendra Modi", "party": "BJP", "votes": 581022, "margin": 371784, "turnout": 57.47}
+    ],
+    "issues": ["Ganga pollution", "Tourism development", "Silk weaving industry", "Hindu pilgrimage infrastructure", "Traffic congestion"],
+    "coordinates": {"lat": 25.3176, "lng": 82.9739},
+    "description": "One of the oldest cities in the world, Varanasi is a major political and religious center. Prime Minister Modi's constituency since 2014."
+  },
+  {
+    "name": "Rae Bareli",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "currentRep": "Rahul Gandhi",
+    "party": "INC",
+    "results": [
+      {"year": 2024, "winner": "Rahul Gandhi", "party": "INC", "votes": 687649, "margin": 390030, "turnout": 51.8},
+      {"year": 2019, "winner": "Sonia Gandhi", "party": "INC", "votes": 534918, "margin": 167178, "turnout": 49.35},
+      {"year": 2014, "winner": "Sonia Gandhi", "party": "INC", "votes": 526434, "margin": 352713, "turnout": 50.01}
+    ],
+    "issues": ["Rural unemployment", "Sugarcane farming", "Railway jobs", "Women safety", "Drinking water"],
+    "coordinates": {"lat": 26.2306, "lng": 81.2323},
+    "description": "Traditional Gandhi family stronghold in Uttar Pradesh. Rahul Gandhi won this seat in 2024 after moving from Wayanad."
+  },
+  {
+    "name": "New Delhi",
+    "state": "Delhi",
+    "type": "Lok Sabha",
+    "currentRep": "Bansuri Swaraj",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Bansuri Swaraj", "party": "BJP", "votes": 472966, "margin": 78370, "turnout": 54.08},
+      {"year": 2019, "winner": "Meenakshi Lekhi", "party": "BJP", "votes": 533076, "margin": 264868, "turnout": 60.24},
+      {"year": 2014, "winner": "Meenakshi Lekhi", "party": "BJP", "votes": 404873, "margin": 162050, "turnout": 63.31}
+    ],
+    "issues": ["Air pollution", "Traffic", "Unauthorized colonies", "Housing", "Water scarcity"],
+    "coordinates": {"lat": 28.6139, "lng": 77.2090},
+    "description": "The New Delhi parliamentary constituency covers central Delhi including Connaught Place, India Gate, and surrounding areas."
+  },
+  {
+    "name": "Mumbai North",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "currentRep": "Piyush Goyal",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Piyush Goyal", "party": "BJP", "votes": 658640, "margin": 303008, "turnout": 51.38},
+      {"year": 2019, "winner": "Piyush Goyal", "party": "BJP", "votes": 728632, "margin": 464638, "turnout": 55.06},
+      {"year": 2014, "winner": "Gopal Shetty", "party": "BJP", "votes": 622365, "margin": 428484, "turnout": 53.41}
+    ],
+    "issues": ["Infrastructure", "Housing", "Coastal development", "Air pollution", "MSME support"],
+    "coordinates": {"lat": 19.2183, "lng": 72.9781},
+    "description": "Mumbai North covers the suburban areas of Mumbai including Borivali, Kandivali, and Dahisar."
+  },
+  {
+    "name": "Kolkata North",
+    "state": "West Bengal",
+    "type": "Lok Sabha",
+    "currentRep": "Sudip Bandyopadhyay",
+    "party": "TMC",
+    "results": [
+      {"year": 2024, "winner": "Sudip Bandyopadhyay", "party": "TMC", "votes": 531289, "margin": 220022, "turnout": 68.58},
+      {"year": 2019, "winner": "Sudip Bandyopadhyay", "party": "TMC", "votes": 581085, "margin": 313728, "turnout": 76.07},
+      {"year": 2014, "winner": "Sudip Bandyopadhyay", "party": "TMC", "votes": 436019, "margin": 110780, "turnout": 76.05}
+    ],
+    "issues": ["Flood management", "Port modernization", "Jute industry", "North Kolkata development", "Heritage conservation"],
+    "coordinates": {"lat": 22.5726, "lng": 88.3639},
+    "description": "Kolkata North includes heritage areas of the city including Shyambazar, Belgachia, and areas near the Hooghly River."
+  },
+  {
+    "name": "Lucknow",
+    "state": "Uttar Pradesh",
+    "type": "Lok Sabha",
+    "currentRep": "Rajnath Singh",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Rajnath Singh", "party": "BJP", "votes": 619811, "margin": 257696, "turnout": 50.25},
+      {"year": 2019, "winner": "Rajnath Singh", "party": "BJP", "votes": 632604, "margin": 347302, "turnout": 53.26},
+      {"year": 2014, "winner": "Rajnath Singh", "party": "BJP", "votes": 558971, "margin": 272749, "turnout": 54.01}
+    ],
+    "issues": ["Urban development", "IT sector growth", "Traffic", "Heritage conservation", "Leather industry"],
+    "coordinates": {"lat": 26.8467, "lng": 80.9462},
+    "description": "State capital constituency with a mix of Nawabi heritage and modern development. Home to Defence Minister Rajnath Singh."
+  },
+  {
+    "name": "Bengaluru South",
+    "state": "Karnataka",
+    "type": "Lok Sabha",
+    "currentRep": "Tejasvi Surya",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Tejasvi Surya", "party": "BJP", "votes": 691766, "margin": 203578, "turnout": 54.67},
+      {"year": 2019, "winner": "Tejasvi Surya", "party": "BJP", "votes": 788193, "margin": 331192, "turnout": 58.58},
+      {"year": 2014, "winner": "Ananth Kumar", "party": "BJP", "votes": 649481, "margin": 226491, "turnout": 56.05}
+    ],
+    "issues": ["IT sector infrastructure", "Traffic congestion", "Housing prices", "Water supply", "Startup ecosystem"],
+    "coordinates": {"lat": 12.9141, "lng": 77.6101},
+    "description": "Bengaluru South covers the IT hub of Whitefield, Koramangala, and Electronic City areas of India's Silicon Valley."
+  },
+  {
+    "name": "Hyderabad",
+    "state": "Telangana",
+    "type": "Lok Sabha",
+    "currentRep": "Asaduddin Owaisi",
+    "party": "AIMIM",
+    "results": [
+      {"year": 2024, "winner": "Asaduddin Owaisi", "party": "AIMIM", "votes": 397879, "margin": 144887, "turnout": 49.62},
+      {"year": 2019, "winner": "Asaduddin Owaisi", "party": "AIMIM", "votes": 517471, "margin": 282170, "turnout": 45.03},
+      {"year": 2014, "winner": "Asaduddin Owaisi", "party": "AIMIM", "votes": 399699, "margin": 200000, "turnout": 43.67}
+    ],
+    "issues": ["Old city development", "Water supply", "IT-old city gap", "Minority welfare", "GHMC civic issues"],
+    "coordinates": {"lat": 17.3850, "lng": 78.4867},
+    "description": "Hyderabad constituency covers the historic old city and surrounding areas including Charminar and Golconda."
+  },
+  {
+    "name": "Chennai Central",
+    "state": "Tamil Nadu",
+    "type": "Lok Sabha",
+    "currentRep": "Dayanidhi Maran",
+    "party": "DMK",
+    "results": [
+      {"year": 2024, "winner": "Dayanidhi Maran", "party": "DMK", "votes": 448614, "margin": 282012, "turnout": 52.25},
+      {"year": 2019, "winner": "Dayanidhi Maran", "party": "DMK", "votes": 507641, "margin": 327370, "turnout": 58.26},
+      {"year": 2014, "winner": "Dayanidhi Maran", "party": "DMK", "votes": 312567, "margin": 68000, "turnout": 65.61}
+    ],
+    "issues": ["Cauvery water dispute", "Tamil language rights", "Port development", "Textile industry", "Urban infrastructure"],
+    "coordinates": {"lat": 13.0827, "lng": 80.2707},
+    "description": "Chennai Central is the heart of Tamil Nadu's capital covering Parry's Corner and central business district."
+  },
+  {
+    "name": "Patna Sahib",
+    "state": "Bihar",
+    "type": "Lok Sabha",
+    "currentRep": "Ravi Shankar Prasad",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Ravi Shankar Prasad", "party": "BJP", "votes": 558321, "margin": 209988, "turnout": 52.37},
+      {"year": 2019, "winner": "Ravi Shankar Prasad", "party": "BJP", "votes": 611145, "margin": 284657, "turnout": 56.18},
+      {"year": 2014, "winner": "Shatrughan Sinha", "party": "BJP", "votes": 393786, "margin": 152900, "turnout": 51.65}
+    ],
+    "issues": ["Ganga flooding", "Bihar special status", "Infrastructure", "Education quality", "Urban sewage"],
+    "coordinates": {"lat": 25.5941, "lng": 85.1376},
+    "description": "Patna Sahib covers the state capital of Bihar and is named after the birthplace of Guru Gobind Singh."
+  },
+  {
+    "name": "Amritsar",
+    "state": "Punjab",
+    "type": "Lok Sabha",
+    "currentRep": "Gurjeet Singh Aujla",
+    "party": "INC",
+    "results": [
+      {"year": 2024, "winner": "Gurjeet Singh Aujla", "party": "INC", "votes": 377590, "margin": 122018, "turnout": 58.09},
+      {"year": 2019, "winner": "Gurjeet Singh Aujla", "party": "INC", "votes": 488649, "margin": 100887, "turnout": 64.81},
+      {"year": 2014, "winner": "Capt. Amarinder Singh", "party": "INC", "votes": 374423, "margin": 57000, "turnout": 67.08}
+    ],
+    "issues": ["Drug menace", "Farm distress", "Cross-border smuggling", "Golden Temple development", "Trade with Pakistan"],
+    "coordinates": {"lat": 31.6340, "lng": 74.8723},
+    "description": "Amritsar is home to the sacred Golden Temple and is Punjab's second largest city with strategic border location."
+  },
+  {
+    "name": "Jaipur",
+    "state": "Rajasthan",
+    "type": "Lok Sabha",
+    "currentRep": "Manju Sharma",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Manju Sharma", "party": "BJP", "votes": 734198, "margin": 456000, "turnout": 55.81},
+      {"year": 2019, "winner": "Ramcharan Bohra", "party": "BJP", "votes": 741648, "margin": 541432, "turnout": 63.87},
+      {"year": 2014, "winner": "Ramcharan Bohra", "party": "BJP", "votes": 659912, "margin": 534000, "turnout": 61.5}
+    ],
+    "issues": ["Water scarcity", "Tourism", "Heritage conservation", "IT development", "Textile industry"],
+    "coordinates": {"lat": 26.9124, "lng": 75.7873},
+    "description": "The Pink City of Jaipur is Rajasthan's capital, famous for its Rajput-era palaces and as a major tourist destination."
+  },
+  {
+    "name": "Pune",
+    "state": "Maharashtra",
+    "type": "Lok Sabha",
+    "currentRep": "Murlidhar Mohol",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Murlidhar Mohol", "party": "BJP", "votes": 610516, "margin": 147349, "turnout": 48.01},
+      {"year": 2019, "winner": "Girish Bapat", "party": "BJP", "votes": 695985, "margin": 369458, "turnout": 53.92},
+      {"year": 2014, "winner": "Anil Shirole", "party": "BJP", "votes": 598455, "margin": 289523, "turnout": 54.47}
+    ],
+    "issues": ["IT corridor development", "Pune-Mumbai traffic", "Higher education quality", "Defence DRDO", "Smart city"],
+    "coordinates": {"lat": 18.5204, "lng": 73.8567},
+    "description": "Pune is Maharashtra's cultural capital known as the Oxford of the East for its universities and IT companies."
+  },
+  {
+    "name": "Bhopal",
+    "state": "Madhya Pradesh",
+    "type": "Lok Sabha",
+    "currentRep": "Alok Sharma",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Alok Sharma", "party": "BJP", "votes": 741049, "margin": 341390, "turnout": 57.44},
+      {"year": 2019, "winner": "Pragya Thakur", "party": "BJP", "votes": 832648, "margin": 364822, "turnout": 61.96},
+      {"year": 2014, "winner": "Alok Sanjar", "party": "BJP", "votes": 612441, "margin": 370199, "turnout": 58.36}
+    ],
+    "issues": ["Bhopal gas tragedy compensation", "Lake Bhopal conservation", "Industrial development", "Education", "Healthcare"],
+    "coordinates": {"lat": 23.2599, "lng": 77.4126},
+    "description": "Madhya Pradesh's capital, remembered for the 1984 Bhopal gas disaster and known for its beautiful lakes."
+  },
+  {
+    "name": "Ahmedabad East",
+    "state": "Gujarat",
+    "type": "Lok Sabha",
+    "currentRep": "Hasmukhbhai Patel",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Hasmukhbhai Patel", "party": "BJP", "votes": 778283, "margin": 480000, "turnout": 54.72},
+      {"year": 2019, "winner": "Hasmukhbhai Patel", "party": "BJP", "votes": 852028, "margin": 593360, "turnout": 64.07},
+      {"year": 2014, "winner": "Haren Pandya", "party": "BJP", "votes": 717822, "margin": 491000, "turnout": 61.03}
+    ],
+    "issues": ["Textile industry revival", "Sabarmati Riverfront", "Urban housing", "Manufacturing hub", "Air quality"],
+    "coordinates": {"lat": 23.0225, "lng": 72.5714},
+    "description": "Ahmedabad East covers the industrial and eastern residential areas of Gujarat's commercial capital."
+  },
+  {
+    "name": "Thiruvananthapuram",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "currentRep": "Shashi Tharoor",
+    "party": "INC",
+    "results": [
+      {"year": 2024, "winner": "Shashi Tharoor", "party": "INC", "votes": 358155, "margin": 16077, "turnout": 71.6},
+      {"year": 2019, "winner": "Shashi Tharoor", "party": "INC", "votes": 416131, "margin": 99989, "turnout": 73.37},
+      {"year": 2014, "winner": "Shashi Tharoor", "party": "INC", "votes": 297506, "margin": 15470, "turnout": 75.3}
+    ],
+    "issues": ["IT growth", "Tourism", "Vizhinjam port", "Space research (ISRO)", "Coastal erosion"],
+    "coordinates": {"lat": 8.5241, "lng": 76.9366},
+    "description": "Kerala's capital and a major IT hub, Thiruvananthapuram hosts ISRO's Vikram Sarabhai Space Centre."
+  },
+  {
+    "name": "Wayanad",
+    "state": "Kerala",
+    "type": "Lok Sabha",
+    "currentRep": "Priyanka Gandhi Vadra",
+    "party": "INC",
+    "results": [
+      {"year": 2024, "winner": "Priyanka Gandhi Vadra", "party": "INC", "votes": 622338, "margin": 410931, "turnout": 72.4},
+      {"year": 2019, "winner": "Rahul Gandhi", "party": "INC", "votes": 706367, "margin": 431770, "turnout": 80.34},
+      {"year": 2014, "winner": "M.I. Shanavas", "party": "INC", "votes": 451000, "margin": 20000, "turnout": 77.25}
+    ],
+    "issues": ["Tribal welfare", "Forest rights", "Agriculture", "Coffee & spice economy", "Wayanad landslide rehabilitation"],
+    "coordinates": {"lat": 11.6854, "lng": 76.1320},
+    "description": "Wayanad is a tribal-majority hilly district in Kerala known for its forests, wildlife, and coffee plantations."
+  },
+  {
+    "name": "Chandigarh",
+    "state": "Chandigarh UT",
+    "type": "Lok Sabha",
+    "currentRep": "Kirron Kher",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Sanjay Tandon", "party": "BJP", "votes": 234576, "margin": 2504, "turnout": 65.02},
+      {"year": 2019, "winner": "Kirron Kher", "party": "BJP", "votes": 281584, "margin": 45699, "turnout": 70.47},
+      {"year": 2014, "winner": "Kirron Kher", "party": "BJP", "votes": 206989, "margin": 69000, "turnout": 72.7}
+    ],
+    "issues": ["Urban planning", "City beautification", "Employment", "Higher education", "Chandigarh capital dispute"],
+    "coordinates": {"lat": 30.7333, "lng": 76.7794},
+    "description": "The planned city designed by Le Corbusier serves as the shared capital of Punjab and Haryana states."
+  },
+  {
+    "name": "Guwahati",
+    "state": "Assam",
+    "type": "Lok Sabha",
+    "currentRep": "Bijuli Kalita Medhi",
+    "party": "BJP",
+    "results": [
+      {"year": 2024, "winner": "Bijuli Kalita Medhi", "party": "BJP", "votes": 696831, "margin": 291300, "turnout": 68.97},
+      {"year": 2019, "winner": "Queen Ojha", "party": "BJP", "votes": 673786, "margin": 378866, "turnout": 70.97},
+      {"year": 2014, "winner": "Bijoya Chakravarty", "party": "BJP", "votes": 506820, "margin": 164200, "turnout": 67.03}
+    ],
+    "issues": ["Brahmaputra flooding", "CAA/NRC", "Northeast connectivity", "Tea industry", "Urban migration"],
+    "coordinates": {"lat": 26.1445, "lng": 91.7362},
+    "description": "Guwahati is the commercial capital of Northeast India and the largest city in Assam."
+  }
+]

@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "source": "Representation of the People Act 1951, Constitution of India, ECI Guidelines",
+    "last_updated": "2024"
+  },
+  "emergency_contacts": [
+    { "name": "National Voter Helpline",    "number": "1950",          "desc": "All election queries — toll-free" },
+    { "name": "ECI Toll-Free",              "number": "1800-111-950",  "desc": "General complaints" },
+    { "name": "Police Emergency",           "number": "100",           "desc": "Booth violence / threats" },
+    { "name": "cVIGIL App",                 "number": null,            "desc": "Report violations with photo/video", "url": "https://cvigil.eci.gov.in" }
+  ],
+  "rights": [
+    {
+      "title": "Right to Vote",
+      "source": "Constitution of India — Article 326; RPA 1951",
+      "text": "Every Indian citizen aged 18 or above on January 1st of the qualifying year has the fundamental right to vote. This right cannot be denied based on religion, race, caste, sex, or place of birth."
+    },
+    {
+      "title": "Right to Secret Ballot",
+      "source": "Conduct of Elections Rules 1961 — Rule 49M",
+      "text": "Your vote is completely secret. No one — including polling officials, government authorities, or candidates — can know how you voted. The voting compartment ensures full privacy."
+    },
+    {
+      "title": "Right to Vote Free from Intimidation",
+      "source": "RPA 1951 — Sections 135A, 135B; IPC Section 171C",
+      "text": "You have the right to vote free from threats, coercion, or pressure. Booth capturing, voter intimidation, and undue influence are criminal offenses punishable with imprisonment."
+    },
+    {
+      "title": "Right to Know Candidate Backgrounds",
+      "source": "Supreme Court Order 2002 — People's Union for Civil Liberties vs UOI; ECI Mandatory Disclosure Rules",
+      "text": "You have the right to know candidates' criminal cases, financial assets, liabilities, and educational qualifications through mandatory affidavits filed with ECI — available at affidavit.eci.gov.in and myneta.info."
+    },
+    {
+      "title": "Right to Vote Using Alternate ID",
+      "source": "ECI Order No. 3/2014 — Alternative Documents Notification",
+      "text": "If you don't have your Voter ID (EPIC), you can vote using any one of 12 approved alternate photo IDs: Aadhaar, PAN Card, Driving License, Passport, MGNREGA Job Card, Bank/Post Office Passbook with photo, Smart Card (CGHS/ECHS), Pension document, NPR Smart Card, or others notified by ECI."
+    },
+    {
+      "title": "Right to File Election Petition",
+      "source": "RPA 1951 — Sections 80–81",
+      "text": "If you believe an election was conducted illegally or through corrupt practices, you can file an election petition in the High Court within 45 days of the declaration of results under Section 81 of RPA 1951."
+    },
+    {
+      "title": "Right to Vote NOTA",
+      "source": "Supreme Court — PUCL vs Union of India 2013; ECI notification",
+      "text": "NOTA (None of the Above) was introduced following the Supreme Court's 2013 ruling. It is the last option on every EVM. Pressing NOTA is your democratic right to register dissent without abstaining."
+    },
+    {
+      "title": "Right to Assistance at Polling Booth",
+      "source": "Conduct of Elections Rules 1961 — Rule 49N; ECI Guidelines 2019",
+      "text": "Differently-abled voters (40%+ certified disability) and voters aged 85+ have the right to request postal ballot or bring a companion of their choice inside the voting compartment (one companion per voter)."
+    },
+    {
+      "title": "Right Against Bribery",
+      "source": "RPA 1951 — Section 123(1); IPC Section 171B",
+      "text": "Accepting money, gifts, liquor, or other inducements to vote is illegal (both giving and receiving). Report via cVIGIL app with evidence. Flying Squads respond within 100 minutes during elections."
+    },
+    {
+      "title": "Right to Paid Voting Leave",
+      "source": "ECI Guidelines; State-specific election holiday laws",
+      "text": "Employees are entitled to paid leave on election day to enable voting. Employers cannot deny voting leave. This applies to both government and private sector employees during Lok Sabha and Vidhan Sabha elections."
+    }
+  ],
+  "complaint_types": [
+    {
+      "type": "Booth Capture",
+      "icon": "🚨",
+      "steps": "Call 100 (Police) immediately for safety. Also call 1950. Use cVIGIL app to upload photo/video with GPS location — Flying Squad responds within 100 minutes. Note booth number, location, and time."
+    },
+    {
+      "type": "Voter Bribery",
+      "icon": "💰",
+      "steps": "Do NOT accept money or gifts (accepting is also an offense under Section 171C IPC). Report via cVIGIL app with photo evidence. Call 1950 or the District Election Officer. Note vehicle registration, time, and description."
+    },
+    {
+      "type": "Bogus Voting",
+      "icon": "📝",
+      "steps": "Inform the Presiding Officer immediately — demand a Tender Ballot. File written complaint with the Returning Officer. Call 1950. Note names and descriptions of perpetrators."
+    },
+    {
+      "type": "Intimidation / Threats",
+      "icon": "⚠️",
+      "steps": "Call 100 (Police) first for personal safety. Then call 1950. Use cVIGIL with evidence. File written complaint with District Election Officer (DEO) or Sector Officer on duty at booth."
+    },
+    {
+      "type": "EVM Malfunction",
+      "icon": "🔧",
+      "steps": "Immediately inform the Presiding Officer inside the booth. They must fix or replace the EVM within set time limits. If unaddressed, call the Sector Officer or 1950 helpline. Do not leave the booth queue."
+    }
+  ],
+  "quiz_questions": [
+    { "q": "What is the minimum age to vote in India?", "options": ["16", "18", "21", "25"], "answer": 1, "explanation": "Article 326 of the Constitution grants voting rights to all citizens aged 18+ as of January 1 of the qualifying year." },
+    { "q": "Which constitutional article grants the right to vote?", "options": ["Article 19", "Article 21", "Article 326", "Article 14"], "answer": 2, "explanation": "Article 326 of the Constitution of India gives universal adult suffrage — the right to vote to all adult citizens." },
+    { "q": "Under which Act must election petitions be filed?", "options": ["IPC 1860", "RPA 1951", "CPC 1908", "CrPC 1973"], "answer": 1, "explanation": "Election petitions are filed under Section 80-81 of the Representation of the People Act, 1951 in the High Court within 45 days." },
+    { "q": "Within how many days must an election petition be filed?", "options": ["15 days", "30 days", "45 days", "90 days"], "answer": 2, "explanation": "Under Section 81 of RPA 1951, an election petition must be filed within 45 days of the declaration of results." },
+    { "q": "Which Supreme Court judgment introduced NOTA in India?", "options": ["Kesavananda Bharati 1973", "PUCL vs UOI 2013", "SR Bommai 1994", "Vineet Narain 1998"], "answer": 1, "explanation": "The Supreme Court in PUCL vs Union of India (2013) directed ECI to introduce NOTA as the last option on EVMs." }
+  ]
+}

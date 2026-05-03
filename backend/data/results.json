@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "election": "18th Lok Sabha General Election 2024",
+    "declared": "2024-06-04",
+    "source": "Election Commission of India — results.eci.gov.in",
+    "total_seats": 543,
+    "total_votes_cast": 642000000,
+    "national_turnout": 65.79
+  },
+  "winner": {
+    "alliance": "NDA",
+    "seats": 293,
+    "composition": "BJP (240) + TDP (16) + JDU (12) + SS-Shinde (7) + Others (18)",
+    "pm": "Narendra Modi",
+    "sworn_in": "2024-06-09",
+    "term": "3rd consecutive term"
+  },
+  "alliances": [
+    {
+      "name": "NDA",
+      "seats": 293,
+      "color": "#FF6600",
+      "parties": "BJP (240) + TDP (16) + JDU (12) + SS-Shinde (7) + Others (18)",
+      "majority": true
+    },
+    {
+      "name": "INDIA",
+      "seats": 234,
+      "color": "#1E90FF",
+      "parties": "INC (99) + SP (37) + AITC (29) + DMK (22) + Others (47)",
+      "majority": false
+    },
+    {
+      "name": "Others",
+      "seats": 16,
+      "color": "#888888",
+      "parties": "AIMIM (4) + YSR-CP (4) + Independents + Others",
+      "majority": false
+    }
+  ],
+  "party_results": [
+    { "party": "BJP",        "seats": 240, "color": "#FF6600", "alliance": "NDA",    "vote_share": "36.56%", "votes": 235856867 },
+    { "party": "INC",        "seats": 99,  "color": "#1E90FF", "alliance": "INDIA",  "vote_share": "21.19%", "votes": 136458865 },
+    { "party": "SP",         "seats": 37,  "color": "#FF0000", "alliance": "INDIA",  "vote_share": "6.35%",  "votes": 40893813 },
+    { "party": "AITC",       "seats": 29,  "color": "#00A86B", "alliance": "INDIA",  "vote_share": "5.67%",  "votes": 36516025 },
+    { "party": "DMK",        "seats": 22,  "color": "#CC0000", "alliance": "INDIA",  "vote_share": "4.00%",  "votes": 25771847 },
+    { "party": "TDP",        "seats": 16,  "color": "#FDD835", "alliance": "NDA",    "vote_share": "2.63%",  "votes": 16937591 },
+    { "party": "JDU",        "seats": 12,  "color": "#4CAF50", "alliance": "NDA",    "vote_share": "1.94%",  "votes": 12495594 },
+    { "party": "SS (Shinde)","seats": 7,   "color": "#FF8C00", "alliance": "NDA",    "vote_share": "1.20%",  "votes": 7720266  },
+    { "party": "CPI(M)",     "seats": 4,   "color": "#B71C1C", "alliance": "INDIA",  "vote_share": "1.61%",  "votes": 10371294 },
+    { "party": "YSRCP",      "seats": 4,   "color": "#0D47A1", "alliance": "Others", "vote_share": "2.43%",  "votes": 15649547 },
+    { "party": "Others",     "seats": 73,  "color": "#888888", "alliance": "Others", "vote_share": "16.42%", "votes": 105785527}
+  ],
+  "phase_turnout": [
+    { "phase": "Phase 1", "date": "2024-04-19", "seats": 102, "turnout": 66.14, "states": ["Tamil Nadu","Rajasthan","UP (8 seats)","MP","Manipur","Meghalaya","Assam","Bihar","Chhattisgarh"] },
+    { "phase": "Phase 2", "date": "2024-04-26", "seats": 89,  "turnout": 66.71, "states": ["Kerala","Karnataka","Rajasthan","UP","Maharashtra","Manipur","Tripura"] },
+    { "phase": "Phase 3", "date": "2024-05-07", "seats": 94,  "turnout": 65.68, "states": ["Gujarat","Karnataka","MP","Maharashtra","UP","West Bengal","Goa"] },
+    { "phase": "Phase 4", "date": "2024-05-13", "seats": 96,  "turnout": 69.16, "states": ["Andhra Pradesh","Telangana","MP","Maharashtra","UP","West Bengal","Odisha"] },
+    { "phase": "Phase 5", "date": "2024-05-20", "seats": 49,  "turnout": 62.20, "states": ["UP","Rajasthan","Maharashtra","West Bengal","J&K","Ladakh"] },
+    { "phase": "Phase 6", "date": "2024-05-25", "seats": 58,  "turnout": 63.37, "states": ["UP","West Bengal","Bihar","Delhi","Haryana","Jharkhand","Odisha","J&K"] },
+    { "phase": "Phase 7", "date": "2024-06-01", "seats": 57,  "turnout": 62.00, "states": ["UP (Varanasi)","West Bengal","Bihar","Punjab","HP","Jharkhand","Chandigarh"] }
+  ],
+  "state_results": [
+    { "state": "Uttar Pradesh",  "total": 80, "nda": 36, "india": 43, "others": 1, "turnout": 57.51 },
+    { "state": "Maharashtra",    "total": 48, "nda": 17, "india": 30, "others": 1, "turnout": 61.03 },
+    { "state": "West Bengal",    "total": 42, "nda": 12, "india": 29, "others": 1, "turnout": 76.23 },
+    { "state": "Bihar",          "total": 40, "nda": 30, "india": 9,  "others": 1, "turnout": 55.72 },
+    { "state": "Tamil Nadu",     "total": 39, "nda": 2,  "india": 37, "others": 0, "turnout": 72.86 },
+    { "state": "Madhya Pradesh", "total": 29, "nda": 29, "india": 0,  "others": 0, "turnout": 67.07 },
+    { "state": "Karnataka",      "total": 28, "nda": 17, "india": 11, "others": 0, "turnout": 70.01 },
+    { "state": "Rajasthan",      "total": 25, "nda": 14, "india": 11, "others": 0, "turnout": 59.73 },
+    { "state": "Andhra Pradesh", "total": 25, "nda": 21, "india": 4,  "others": 0, "turnout": 79.35 },
+    { "state": "Gujarat",        "total": 26, "nda": 26, "india": 0,  "others": 0, "turnout": 59.74 },
+    { "state": "Odisha",         "total": 21, "nda": 20, "india": 1,  "others": 0, "turnout": 73.85 },
+    { "state": "Telangana",      "total": 17, "nda": 8,  "india": 8,  "others": 1, "turnout": 67.42 },
+    { "state": "Jharkhand",      "total": 14, "nda": 8,  "india": 6,  "others": 0, "turnout": 66.72 },
+    { "state": "Punjab",         "total": 13, "nda": 2,  "india": 7,  "others": 4, "turnout": 61.97 },
+    { "state": "Haryana",        "total": 10, "nda": 5,  "india": 5,  "others": 0, "turnout": 64.77 },
+    { "state": "Delhi",          "total": 7,  "nda": 7,  "india": 0,  "others": 0, "turnout": 58.69 },
+    { "state": "Kerala",         "total": 20, "nda": 1,  "india": 18, "others": 1, "turnout": 71.26 },
+    { "state": "Assam",          "total": 14, "nda": 11, "india": 3,  "others": 0, "turnout": 79.60 }
+  ],
+  "notable_constituencies": [
+    { "constituency": "Varanasi",          "winner": "Narendra Modi (BJP)",    "votes": 612970, "margin": 152513, "turnout": 54.28, "runner_up": "Ajay Rai (INC)" },
+    { "constituency": "Rae Bareli",        "winner": "Rahul Gandhi (INC)",     "votes": 687649, "margin": 390030, "turnout": 51.80, "runner_up": "Dinesh Pratap Singh (BJP)" },
+    { "constituency": "Wayanad",           "winner": "Rahul Gandhi (INC)",     "votes": 706367, "margin": 364422, "turnout": 72.40, "runner_up": "K Surendran (BJP)" },
+    { "constituency": "Ayodhya (Faizabad)","winner": "Awadesh Prasad (SP)",    "votes": 554289, "margin": 54567,  "turnout": 56.99, "runner_up": "Lallu Singh (BJP)" },
+    { "constituency": "New Delhi",         "winner": "Bansuri Swaraj (BJP)",   "votes": 472966, "margin": 78370,  "turnout": 54.08, "runner_up": "Somnath Bharti (AAP)" },
+    { "constituency": "Thiruvananthapuram","winner": "Shashi Tharoor (INC)",   "votes": 358155, "margin": 16077,  "turnout": 71.60, "runner_up": "Rajeev Chandrasekhar (BJP)" },
+    { "constituency": "Lucknow",           "winner": "Rajnath Singh (BJP)",    "votes": 619811, "margin": 257696, "turnout": 50.25, "runner_up": "Ravidas Mehrotra (SP)" },
+    { "constituency": "Amritsar",          "winner": "Gurjeet Singh Aujla (INC)","votes": 377590,"margin": 122018,"turnout": 58.09, "runner_up": "Taranjit Singh Sandhu (BJP)" }
+  ],
+  "key_facts": [
+    "BJP fell short of majority (272) for first time since 2014 — won 240 seats alone",
+    "INC more than doubled seats: 52 in 2019 → 99 in 2024",
+    "SP won 37 seats — highest since 2009",
+    "INDIA bloc won 234 seats but could not form government",
+    "642 million votes cast — highest ever in any election globally",
+    "Ayodhya (Faizabad) — BJP lost despite Ram Mandir inauguration in Jan 2024",
+    "Women voter turnout exceeded men's in several states including Bihar"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "source": "Election Commission of India — Conduct of Elections Rules 1961; ECI Voter Guide 2024",
+    "url": "https://eci.gov.in/voter-corner/voter-guide"
+  },
+  "in_person_steps": [
+    {
+      "icon": "🆔",
+      "title": "Carry a Valid Photo ID",
+      "desc": "Bring your EPIC (Voter ID card) or any of the 12 ECI-approved alternate photo IDs: Aadhaar, PAN, Driving License, Passport, MGNREGA Job Card, Bank/Post Office Passbook with photo, Smart Card (CGHS/ECHS), NPR Smart Card, Service Identity Card, Pension Document, or MLA/MP/MLC identity card.",
+      "source": "ECI Order No. 3/2014"
+    },
+    {
+      "icon": "🏫",
+      "title": "Reach Your Assigned Polling Station",
+      "desc": "Go only to your assigned polling station (as per your Voter Slip or electoralsearch.eci.gov.in). Booths open at 7:00 AM and close at 6:00 PM. Persons already in queue at 6 PM are entitled to vote. Separate queues exist for senior citizens, differently-abled, and women.",
+      "source": "Conduct of Elections Rules 1961 — Rule 30"
+    },
+    {
+      "icon": "✅",
+      "title": "Identity Verification at Table 1",
+      "desc": "Show your photo ID to the first polling official. Your name and serial number are checked in the printed Electoral Roll (Part of voters list). The Presiding Officer records your name and marks it as voted to prevent duplicate voting.",
+      "source": "Conduct of Elections Rules 1961 — Rule 49E"
+    },
+    {
+      "icon": "💧",
+      "title": "Indelible Ink Marking at Table 2",
+      "desc": "Indelible ink is applied on the nail and skin of the left index finger (or another finger if missing/damaged). This cannot be removed easily and prevents you from voting again. Ink is prepared by Government of India's Mysore Paints & Varnish Ltd.",
+      "source": "Conduct of Elections Rules 1961 — Rule 49L"
+    },
+    {
+      "icon": "🎫",
+      "title": "Collect Voter Slip at Table 3",
+      "desc": "You receive a slip with your serial number in the voters list and your part number. Show this slip at the voting compartment. Do not enter the compartment without this slip.",
+      "source": "Conduct of Elections Rules 1961 — Rule 49K"
+    },
+    {
+      "icon": "🗳️",
+      "title": "Enter the Voting Compartment (Alone)",
+      "desc": "You enter the voting compartment alone — no one can accompany you except if you have a disability and have declared a companion. Inside is the EVM (Ballot Unit). The voter can take max 5 minutes. Press the BLUE button next to your chosen candidate's name and symbol.",
+      "source": "Conduct of Elections Rules 1961 — Rule 49M"
+    },
+    {
+      "icon": "✔️",
+      "title": "Press the Button on EVM",
+      "desc": "Press the blue candidate button on the Ballot Unit. A beep sound and red light confirms your vote is recorded. The EVM locks automatically after your vote — no second press is possible for the same voter.",
+      "source": "ECI EVM Technical Specifications; RPA 1951 Section 61A"
+    },
+    {
+      "icon": "🧾",
+      "title": "Verify VVPAT Slip (7 seconds)",
+      "desc": "The Voter Verified Paper Audit Trail (VVPAT) machine shows a paper slip for 7 seconds through a transparent window showing the candidate name, symbol, and serial number you voted for. This confirms your vote. The slip is NOT to be removed — it drops into the VVPAT box automatically.",
+      "source": "ECI VVPAT Guidelines 2019; Supreme Court order 2019"
+    }
+  ],
+  "postal_ballot_steps": [
+    {
+      "icon": "📝",
+      "title": "Check Eligibility for Postal Ballot",
+      "desc": "Postal ballots are available for: Senior citizens aged 85+, Differently-abled voters (40%+ certified disability), Essential services personnel (railway, health, power, etc. on election duty), Voters on election duty (government employees), and Preventive detainees.",
+      "source": "Conduct of Elections Rules 1961 — Rule 18; ECI Notification 2020"
+    },
+    {
+      "icon": "📋",
+      "title": "Submit Form 12D to Returning Officer",
+      "desc": "Eligible voters must submit a declaration in Form 12D to the Returning Officer at least 5 clear days before the date of polling. Available at the Returning Officer's office or electoralsearch.eci.gov.in.",
+      "source": "Conduct of Elections Rules 1961 — Rule 23A"
+    },
+    {
+      "icon": "📬",
+      "title": "Receive Postal Ballot Paper",
+      "desc": "The Returning Officer dispatches the postal ballot paper along with a declaration form (Form 13A) and two envelopes (inner and outer) to your registered address by post.",
+      "source": "Conduct of Elections Rules 1961 — Rule 23"
+    },
+    {
+      "icon": "🗳️",
+      "title": "Mark Your Vote in Secrecy",
+      "desc": "Mark a cross (X) in the space provided against your chosen candidate using the provided pencil or pen. Maintain full secrecy — no one should see your vote. Do not damage or spoil the ballot.",
+      "source": "Conduct of Elections Rules 1961 — Rule 24"
+    },
+    {
+      "icon": "📦",
+      "title": "Seal and Return by Due Date",
+      "desc": "Place the marked ballot in the inner envelope (seal it), then place it in the outer envelope. Sign the declaration in Form 13A and place it in the outer envelope. Return by post or hand-deliver to the Returning Officer BEFORE counting day.",
+      "source": "Conduct of Elections Rules 1961 — Rules 25–26"
+    }
+  ],
+  "alternate_ids": [
+    "EPIC (Voter ID Card) — Primary document",
+    "Aadhaar Card",
+    "Passport",
+    "Driving License",
+    "PAN Card",
+    "MGNREGA Job Card",
+    "Bank/Post Office Passbook with Photograph",
+    "Smart Card (CGHS / ECHS)",
+    "NPR Smart Card (issued by RGI)",
+    "Pension Document with Photograph",
+    "Service Identity Card (Govt./PSU employees)",
+    "MLA/MP/MLC/MPLAD Identity Card"
+  ],
+  "faq": [
+    {
+      "q": "What if my name is not in the voter list?",
+      "a": "You can request a Tender Ballot from the Presiding Officer (it is provisionally counted). Also apply via Form 6 at voters.eci.gov.in for future elections. Call 1950 for immediate assistance.",
+      "source": "Conduct of Elections Rules 1961 — Rule 49P"
+    },
+    {
+      "q": "Can I take photos inside the polling booth?",
+      "a": "No. Photography, videography, or use of mobile phones inside the polling booth is strictly prohibited under Section 128 of RPA 1951. Violation can lead to imprisonment up to 3 months.",
+      "source": "RPA 1951 — Section 128"
+    },
+    {
+      "q": "What is NOTA and does it affect results?",
+      "a": "NOTA (None of the Above) is the last option on the EVM. Your NOTA vote is counted separately and disclosed in results. However, NOTA does not cause a re-election — the candidate with the most votes wins regardless.",
+      "source": "Supreme Court — PUCL vs UOI 2013; ECI 2013 notification"
+    },
+    {
+      "q": "How long can I take to vote inside the booth?",
+      "a": "A voter is expected to complete voting within 5 minutes. If there is unreasonable delay, the Presiding Officer can ask you to come out. There is no strict time limit but efficiency is expected.",
+      "source": "ECI Guidelines for Presiding Officers 2024"
+    },
+    {
+      "q": "What is the Model Code of Conduct (MCC)?",
+      "a": "The MCC is a set of guidelines issued by ECI for political parties and candidates that comes into effect from the date of announcement of election schedule until results. It governs campaign conduct, use of government resources, and election-day behavior.",
+      "source": "ECI Model Code of Conduct — introduced 1971, revised 2014"
+    }
+  ]
+}

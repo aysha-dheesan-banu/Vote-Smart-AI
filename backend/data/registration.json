@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "source": "Election Commission of India — voters.eci.gov.in; National Voters' Service Portal (NVSP)",
+    "updated": "2024"
+  },
+  "eligibility_criteria": {
+    "min_age": 18,
+    "citizenship": "Indian citizen only",
+    "qualifying_date": "January 1 of the election year",
+    "disqualifications": [
+      "Non-citizen of India",
+      "Unsound mind (declared by competent court)",
+      "Person serving imprisonment for 2+ years",
+      "Person convicted of election offenses within 6 years"
+    ],
+    "source": "Constitution of India — Article 326; RPA 1951 — Sections 16–19"
+  },
+  "registration_steps": [
+    {
+      "step": 1,
+      "title": "Check Your Eligibility",
+      "icon": "✅",
+      "desc": "You must be 18+ years old on January 1st of the election year and an Indian citizen. Overseas Indian Citizens (OCI) are NOT eligible. NRIs who are Indian citizens CAN register.",
+      "source": "Article 326, Constitution of India"
+    },
+    {
+      "step": 2,
+      "title": "Check Your Existing Registration",
+      "icon": "🔍",
+      "desc": "Before applying, check if you're already registered at electoralsearch.eci.gov.in using your name + date of birth + state. Also check via the Voter Helpline App or by calling 1950.",
+      "link": "https://electoralsearch.eci.gov.in",
+      "source": "ECI Voter Search Portal"
+    },
+    {
+      "step": 3,
+      "title": "Fill the Correct Form",
+      "icon": "📝",
+      "forms": [
+        { "form": "Form 6",  "use": "New voter registration (first time, or moved from another constituency)" },
+        { "form": "Form 6A", "use": "Overseas Indians (NRI voters residing abroad)" },
+        { "form": "Form 7",  "use": "Objection to inclusion of someone else's name, or deletion of dead voter" },
+        { "form": "Form 8",  "use": "Correction of entries in voter roll (name spelling, photo, age, etc.)" },
+        { "form": "Form 8A", "use": "Transposition (shifting of entry) within the same constituency on address change" }
+      ],
+      "desc": "All forms are available on voters.eci.gov.in and at the Booth Level Officer (BLO) in your area.",
+      "source": "Registration of Electors Rules 1960 — Rules 9, 13, 16, 17, 20"
+    },
+    {
+      "step": 4,
+      "title": "Submit Online or at BLO",
+      "icon": "📤",
+      "online_url": "https://voters.eci.gov.in",
+      "app": "Voter Helpline App (Google Play / Apple App Store)",
+      "offline": "Submit physical form to Booth Level Officer (BLO) or Electoral Registration Officer (ERO) of your constituency",
+      "desc": "Online submission is fastest. After submission, you get a reference number to track status. BLO will verify your address within 30 days.",
+      "source": "ECI Digital India Initiative; NVSP Portal"
+    },
+    {
+      "step": 5,
+      "title": "Required Documents",
+      "icon": "📄",
+      "required": [
+        { "doc": "Recent passport-size photograph",              "mandatory": true },
+        { "doc": "Proof of Age (Aadhaar / Birth Certificate / School Certificate / Passport)", "mandatory": true },
+        { "doc": "Proof of Residence (Aadhaar / Utility bill / Bank statement / Ration card)", "mandatory": true }
+      ],
+      "optional": [
+        { "doc": "Aadhaar Card (if available — for EPIC linking)", "mandatory": false }
+      ],
+      "source": "Registration of Electors Rules 1960 — Rule 9"
+    },
+    {
+      "step": 6,
+      "title": "Track and Download e-EPIC",
+      "icon": "📱",
+      "desc": "After verification (typically 30 days), download your e-EPIC (digital Voter ID) from voters.eci.gov.in or the Voter Helpline App. The e-EPIC is a valid PDF voter ID accepted at polling booths.",
+      "link": "https://voters.eci.gov.in/download-eepic",
+      "source": "ECI e-EPIC Programme launched 2021"
+    }
+  ],
+  "important_dates": {
+    "note": "Electoral rolls are revised annually. The key dates are:",
+    "dates": [
+      { "event": "Draft Electoral Roll Published",           "date": "October 1 (approximately)" },
+      { "event": "Claims & Objections Period",              "date": "October 1 – November 30" },
+      { "event": "Final Electoral Roll Published",          "date": "January 5 (Final Publication Day)" },
+      { "event": "Qualifying Date for New Registrations",  "date": "January 1 of the year" }
+    ],
+    "source": "ECI Annual Electoral Roll Revision Schedule"
+  },
+  "common_issues": [
+    { "issue": "Name not in voter list",        "solution": "Check electoralsearch.eci.gov.in. Apply via Form 6. Call 1950. On election day request Tender Ballot from Presiding Officer." },
+    { "issue": "Wrong name/address in roll",    "solution": "Apply via Form 8 (Correction) at voters.eci.gov.in or at BLO office. Corrections free of charge." },
+    { "issue": "Moved to new constituency",     "solution": "Apply Form 6 for new constituency. Also submit Form 7 to delete from old constituency." },
+    { "issue": "Lost Voter ID card",            "solution": "Download e-EPIC free from voters.eci.gov.in using EPIC number. Or apply for duplicate EPIC at ERO." }
+  ]
+}

@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-dark text-white font-dm;
+    margin: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 45, 122, 0.4);
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card border border-border rounded-2xl;
+    backdrop-filter: blur(10px);
+  }
+  .btn-primary {
+    @apply bg-primary text-white px-5 py-2.5 rounded-xl font-sora font-semibold text-sm
+           hover:opacity-90 active:scale-95 transition-all duration-200;
+    box-shadow: 0 0 20px rgba(255, 45, 122, 0.3);
+  }
+  .btn-secondary {
+    @apply border border-secondary text-secondary px-5 py-2.5 rounded-xl font-sora font-semibold text-sm
+           hover:bg-secondary hover:text-dark active:scale-95 transition-all duration-200;
+  }
+  .btn-ghost {
+    @apply px-4 py-2 rounded-xl text-sm text-white/60 hover:text-white hover:bg-white/5 transition-all;
+  }
+  .input {
+    @apply bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/30
+           focus:outline-none focus:border-primary/50 transition-colors w-full;
+  }
+  .card {
+    @apply glass p-5;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold;
+  }
+  .badge-primary {
+    @apply badge bg-primary/20 text-primary border border-primary/30;
+  }
+  .badge-secondary {
+    @apply badge bg-secondary/20 text-secondary border border-secondary/30;
+  }
+  .badge-gold {
+    @apply badge bg-gold/20 text-gold border border-gold/30;
+  }
+  .section-title {
+    @apply font-sora font-bold text-2xl md:text-3xl text-white;
+  }
+  .disclaimer {
+    @apply text-xs text-white/40 mt-2 p-3 bg-white/5 rounded-lg border border-white/10;
+  }
+  .glow-primary {
+    box-shadow: 0 0 30px rgba(255, 45, 122, 0.4);
+  }
+  .glow-secondary {
+    box-shadow: 0 0 30px rgba(0, 245, 212, 0.4);
+  }
+}
+
+/* Leaflet map dark mode */
+.leaflet-container {
+  background: #1a1a2e !important;
+  border-radius: 1rem;
+}
+.leaflet-tile {
+  filter: invert(1) hue-rotate(180deg) brightness(0.85) saturate(0.7);
+}
+
+/* Animated gradient border */
+@keyframes gradient-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-border {
+  background: linear-gradient(270deg, #ff2d7a, #00f5d4, #ffd700, #ff2d7a);
+  background-size: 400% 400%;
+  animation: gradient-border 4s ease infinite;
+  padding: 1px;
+  border-radius: 1rem;
+}
+
+/* Typing animation */
+@keyframes typing {
+  0%, 80%, 100% { opacity: 0; transform: scale(0); }
+  40% { opacity: 1; transform: scale(1); }
+}
+.typing-dot {
+  animation: typing 1.4s infinite ease-in-out;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* Radar sweep animation */
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.radar-sweep {
+  animation: sweep 2s linear infinite;
+  transform-origin: bottom center;
+}
+
+/* Pulse glow */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(255,215,0,0.3); }
+  50% { box-shadow: 0 0 30px rgba(255,215,0,0.8); }
+}
+.pulse-glow-gold {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Counter animation */
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Page transition */
+.page-enter {
+  opacity: 0;
+  transform: translateX(20px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.3s ease;
+}

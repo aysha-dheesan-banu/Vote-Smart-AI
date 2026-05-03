@@ -1,0 +1,113 @@
+{
+  "meta": {
+    "note": "Priority scores (0-100) reflect emphasis in official 2024 manifesto documents — higher = greater emphasis",
+    "sources": {
+      "BJP":  "BJP Sankalp Patra 2024 — 'Viksit Bharat 2047' (bjp.org/manifesto)",
+      "INC":  "INC Nyay Patra 2024 — 'Pyaar aur Vishwas' (inc.in/en/media)",
+      "AAP":  "AAP Manifesto 2024 — Delhi Governance Model Expansion",
+      "TMC":  "AITC Manifesto 2024 — Federalism & Bengal Development",
+      "SP":   "SP Manifesto 2024 — PDA Alliance (Pichda, Dalit, Alpsankhyak)"
+    }
+  },
+  "categories": ["Economy", "Jobs", "Education", "Health", "Farmers", "Women", "Youth", "Infrastructure"],
+  "parties": [
+    {
+      "name": "BJP",
+      "fullName": "Bharatiya Janata Party",
+      "color": "#FF6600",
+      "manifesto": "Sankalp Patra 2024",
+      "tagline": "Viksit Bharat 2047",
+      "scores": { "Economy": 88, "Jobs": 80, "Education": 75, "Health": 70, "Farmers": 82, "Women": 75, "Youth": 78, "Infrastructure": 95 },
+      "top_promises": [
+        "Viksit Bharat 2047 — Make India a developed nation by centenary of Independence",
+        "PM Awas Yojana — 3 crore more housing units",
+        "PM Kisan — continued ₹6,000 annual income support",
+        "National Education Policy 2020 full implementation",
+        "Gati Shakti — ₹11 lakh crore infrastructure investment plan",
+        "Ayushman Bharat expansion — ₹5 lakh health cover to all 70+ citizens"
+      ]
+    },
+    {
+      "name": "INC",
+      "fullName": "Indian National Congress",
+      "color": "#1E90FF",
+      "manifesto": "Nyay Patra 2024",
+      "tagline": "Pyaar aur Vishwas",
+      "scores": { "Economy": 72, "Jobs": 90, "Education": 78, "Health": 85, "Farmers": 92, "Women": 85, "Youth": 82, "Infrastructure": 68 },
+      "top_promises": [
+        "Legal guarantee for MSP to all farmers — main campaign promise",
+        "25 lakh government jobs per year filling vacancies",
+        "Right to Apprenticeship — 1 year paid internship to all graduates",
+        "Caste Census — national caste survey for OBC sub-categorisation",
+        "50% women in Congress-formed government Cabinets",
+        "NYAY 2.0 — financial assistance to poorest families"
+      ]
+    },
+    {
+      "name": "AAP",
+      "fullName": "Aam Aadmi Party",
+      "color": "#00BCD4",
+      "manifesto": "AAP Manifesto 2024",
+      "tagline": "Delhi Model for India",
+      "scores": { "Economy": 68, "Jobs": 78, "Education": 95, "Health": 92, "Farmers": 62, "Women": 78, "Youth": 80, "Infrastructure": 72 },
+      "top_promises": [
+        "World-class government schools in every constituency",
+        "Mohalla Clinics — free healthcare at neighbourhood level",
+        "Free electricity up to 300 units for all households",
+        "Anti-corruption governance — open budget & RTI compliance",
+        "Women's safety — CCTV in every lane",
+        "100% road connectivity and 24x7 clean water supply"
+      ]
+    },
+    {
+      "name": "TMC",
+      "fullName": "All India Trinamool Congress",
+      "color": "#00A86B",
+      "manifesto": "AITC Manifesto 2024",
+      "tagline": "Bangla Nijer Meyeke Chai",
+      "scores": { "Economy": 70, "Jobs": 82, "Education": 75, "Health": 74, "Farmers": 76, "Women": 90, "Youth": 74, "Infrastructure": 66 },
+      "top_promises": [
+        "Lakshmir Bhandar — ₹1,000/month to all women household heads",
+        "Duare Sarkar — government services at citizen's doorstep",
+        "Fight against Central overreach — state autonomy protection",
+        "Kanyashree — girl child education scholarship",
+        "Krishak Bandhu — farmer income support scheme",
+        "Special focus on Bengali language and cultural rights"
+      ]
+    },
+    {
+      "name": "SP",
+      "fullName": "Samajwadi Party",
+      "color": "#FF0000",
+      "manifesto": "SP Manifesto 2024",
+      "tagline": "PDA Alliance",
+      "scores": { "Economy": 66, "Jobs": 88, "Education": 72, "Health": 70, "Farmers": 88, "Women": 72, "Youth": 86, "Infrastructure": 62 },
+      "top_promises": [
+        "PDA Alliance — Pichda (OBC), Dalit, Alpsankhyak (Minority) welfare",
+        "Caste census implementation and OBC reservation protection",
+        "Sugarcane fair price — timely payment to farmers within 15 days",
+        "Unemployment allowance to youth awaiting government jobs",
+        "Expressway economy — UP development through connectivity",
+        "Laptop/tablet to meritorious students in government colleges"
+      ]
+    }
+  ],
+  "promise_tracker": {
+    "BJP": [
+      { "promise": "Ram Mandir construction (2019 manifesto)", "status": "Fulfilled", "detail": "Ram Mandir inaugurated on January 22, 2024 in Ayodhya.", "source": "PIB 2024" },
+      { "promise": "Revoke Article 370 in J&K (2019)", "status": "Fulfilled", "detail": "Article 370 abrogated on August 5, 2019; J&K reorganised into two Union Territories.", "source": "MHA 2019" },
+      { "promise": "Uniform Civil Code nationwide (2019)", "status": "Partial", "detail": "Uttarakhand enacted state-level UCC in 2024. National UCC not enacted.", "source": "Uttarakhand Govt 2024" },
+      { "promise": "Double farmers' income by 2022 (2016 pledge)", "status": "Partial", "detail": "Farm income increased but CACP data shows target of doubling not fully achieved by 2022.", "source": "CACP Annual Report 2023" },
+      { "promise": "10 crore LPG connections — Ujjwala Yojana", "status": "Fulfilled", "detail": "Over 10 crore Ujjwala connections given to BPL households as per MoPNG data.", "source": "MoPNG 2023" },
+      { "promise": "PM Awas Yojana — 3 crore rural houses", "status": "Ongoing", "detail": "Over 2.9 crore houses sanctioned; construction ongoing per MoRD.", "source": "MoRD Annual Report 2024" },
+      { "promise": "₹5 lakh crore economy in 5 years", "status": "Ongoing", "detail": "India became 5th largest economy; $5 trillion target extended to 2027.", "source": "MoF Economic Survey 2024" }
+    ],
+    "INC": [
+      { "promise": "NYAY — ₹6,000/month minimum income guarantee (2019)", "status": "Broken", "detail": "INC lost 2019 election; NYAY scheme was not implemented.", "source": "Election result 2019" },
+      { "promise": "Legal guarantee for MSP to farmers (2024)", "status": "Broken", "detail": "INC did not form government in 2024; policy not enacted.", "source": "Election result 2024" },
+      { "promise": "50% women reservation in Cabinet", "status": "Broken", "detail": "Could not be implemented as INC did not form government in 2019 or 2024.", "source": "Election results" },
+      { "promise": "Right to Apprenticeship — 1 year paid internship (2024)", "status": "Broken", "detail": "Not enacted — INC not in power at Centre.", "source": "Election result 2024" },
+      { "promise": "Caste census & OBC sub-categorisation (2024)", "status": "Ongoing", "detail": "Raised as campaign issue; Bihar caste census done at state level. National census pending.", "source": "Bihar Govt 2023" }
+    ]
+  }
+}

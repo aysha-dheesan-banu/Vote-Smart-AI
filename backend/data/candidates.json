@@ -1,0 +1,262 @@
+[
+  {
+    "id": "1",
+    "name": "Narendra Modi",
+    "party": "BJP",
+    "partyColor": "#FF6600",
+    "partySymbol": "Lotus",
+    "constituency": "Varanasi, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "role": "Prime Minister of India (3rd Term)",
+    "role_since": "June 9, 2024",
+    "image": null,
+    "keyPromises": [
+      "Viksit Bharat 2047 — Make India a developed nation by centenary of Independence",
+      "Gati Shakti — ₹11 lakh crore infrastructure investment plan",
+      "Ayushman Bharat expansion — free health cover to all 70+ citizens"
+    ],
+    "stances": {
+      "economy": "Pro-market with welfare programs; PLI schemes for manufacturing; $5 trillion economy target by 2027",
+      "education": "NEP 2020 full implementation; IIT and AIIMS expansion; National Skill India mission",
+      "health": "Ayushman Bharat ₹5 lakh health cover; Jan Aushadhi affordable medicines; AIIMS network expansion",
+      "farmers": "PM Kisan ₹6,000/year cash transfer; MSP procurement; soil health cards; natural farming push",
+      "environment": "500 GW renewable energy by 2030; National Green Hydrogen Mission; clean Ganga initiative"
+    },
+    "background": "Prime Minister since May 2014, now serving 3rd consecutive term since June 2024 with NDA coalition (BJP 240 seats, coalition total 293). Former CM of Gujarat (2001–2014). Leading India's G20 presidency legacy and Viksit Bharat 2047 vision. Source: PMO India, ECI 2024.",
+    "source": "PMO India — pmindia.gov.in; ECI 2024 results"
+  },
+  {
+    "id": "2",
+    "name": "Rahul Gandhi",
+    "party": "INC",
+    "partyColor": "#1E90FF",
+    "partySymbol": "Hand",
+    "constituency": "Rae Bareli, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "role": "Leader of Opposition, Lok Sabha",
+    "role_since": "June 2024",
+    "image": null,
+    "keyPromises": [
+      "Legal guarantee for MSP to all farmers — main 2024 campaign promise",
+      "Caste census and OBC sub-categorisation for social justice",
+      "25 lakh government jobs per year filling existing vacancies"
+    ],
+    "stances": {
+      "economy": "Mixed economy; social safety nets; anti-monopoly stance against big corporations; wealth redistribution",
+      "education": "6% of GDP for education; restore OBC reservation in central institutions; free government education",
+      "health": "Universal public healthcare; oppose privatisation of AIIMS/CGHS; Rahul's Nyay health scheme",
+      "farmers": "Legal MSP guarantee; farm debt waiver; eliminate middlemen; 2024 Nyay Patra promise",
+      "environment": "Clean energy transition; oppose unchecked mining in tribal areas; forest rights protection"
+    },
+    "background": "Leader of Opposition in Lok Sabha since June 2024 — first time INC secured LoP status since 2014 (INC won 99 seats in 2024). Won Rae Bareli in 2024 (vacated Wayanad for sister Priyanka Gandhi who won there). Led Bharat Jodo Yatra 2022–23 and Bharat Jodo Nyay Yatra 2024. Source: Lok Sabha records; ECI 2024.",
+    "source": "Lok Sabha Secretariat; ECI 2024 declared results"
+  },
+  {
+    "id": "3",
+    "name": "Arvind Kejriwal",
+    "party": "AAP",
+    "partyColor": "#00BCD4",
+    "partySymbol": "Broom",
+    "constituency": "New Delhi (lost Feb 2025)",
+    "state": "Delhi",
+    "role": "AAP National Convener",
+    "role_since": "2012 (party founder)",
+    "image": null,
+    "keyPromises": [
+      "Free electricity (300 units), water, education and healthcare — Delhi model",
+      "Expand AAP's Delhi governance model nationally",
+      "Anti-corruption governance with zero tolerance"
+    ],
+    "stances": {
+      "economy": "Efficient public spending; anti-corruption; ease of doing business for small traders",
+      "education": "Transform government schools — Delhi model; teacher training; digital education infrastructure",
+      "health": "Mohalla Clinics — free primary healthcare; free medicines at government hospitals",
+      "farmers": "Zero-interest crop loans; direct input subsidies; support Punjab farmers",
+      "environment": "Anti-pollution measures in Delhi; electric vehicle promotion; clean air mission"
+    },
+    "background": "AAP co-founder and National Convener. Was Delhi CM from 2015 to Feb 2025. LOST his own New Delhi constituency in Delhi assembly elections (Feb 2025) where BJP swept 48/70 seats. Rekha Gupta (BJP) is now Delhi CM. AAP retains Punjab government under CM Bhagwant Mann. Kejriwal faces UP 2027 as next big challenge. Source: ECI Delhi 2025 results.",
+    "source": "ECI Delhi Assembly Results Feb 2025 — eci.gov.in"
+  },
+  {
+    "id": "4",
+    "name": "Mamata Banerjee",
+    "party": "TMC",
+    "partyColor": "#00A86B",
+    "partySymbol": "Flowers & Grass",
+    "constituency": "Bhawanipore, West Bengal",
+    "state": "West Bengal",
+    "role": "Chief Minister of West Bengal (4th Term)",
+    "role_since": "May 2026",
+    "image": null,
+    "keyPromises": [
+      "Lakshmir Bhandar — ₹1,000/month direct transfer to women household heads",
+      "Duare Sarkar — all government services at citizen's doorstep",
+      "Fight against central government financial overreach on states"
+    ],
+    "stances": {
+      "economy": "State-led development; demand fairer GST devolution to states; oppose financial centralization",
+      "education": "Kanyashree girls education scholarship; state university funding and autonomy",
+      "health": "Swasthya Sathi free health scheme; Nirmal Hriday hospital network; free medicine in state hospitals",
+      "farmers": "Krishak Bandhu ₹10,000/year per farmer; crop insurance; irrigation expansion",
+      "environment": "Sundarbans protection; mangrove conservation; oppose coal mining in Bengal forests"
+    },
+    "background": "Chief Minister of West Bengal serving 4th consecutive term after TMC won 210/294 seats in April 2026 elections. TMC won by consolidating tribal vote, Matua community, and minority electorate. Founded TMC in 1998 after breaking from INC. Key INDIA bloc leader but maintains independence. Source: ECI West Bengal 2026 results.",
+    "source": "ECI West Bengal Assembly Results April 2026 — eci.gov.in"
+  },
+  {
+    "id": "5",
+    "name": "Akhilesh Yadav",
+    "party": "SP",
+    "partyColor": "#FF0000",
+    "partySymbol": "Bicycle",
+    "constituency": "Kannauj, Uttar Pradesh",
+    "state": "Uttar Pradesh",
+    "role": "Leader of Opposition, Uttar Pradesh Assembly",
+    "role_since": "2022",
+    "image": null,
+    "keyPromises": [
+      "PDA Alliance — Pichda, Dalit, Alpsankhyak (OBC, Dalit, Minority) welfare and representation",
+      "Caste census implementation; OBC reservation protection from Supreme Court dilution",
+      "Sugarcane fair price — guarantee timely payment to UP farmers within 15 days"
+    ],
+    "stances": {
+      "economy": "Social welfare focus; UP industrial development via expressway economy; migrant worker support",
+      "education": "Laptop/tablet to meritorious students; government school improvement; scholarships for OBC/SC",
+      "health": "Free ambulance (108) service expansion; district hospital upgrades; generic medicine stores",
+      "farmers": "Sugarcane MSP guarantee; timely payment within 15 days; irrigation infrastructure",
+      "environment": "Yamuna and Ganga cleaning; green belt development along expressways"
+    },
+    "background": "SP President and Leader of Opposition in UP. Won 37 seats in 2024 Lok Sabha (SP's best since 2014). SP won 111 seats in 2022 UP elections (up from 47 in 2017). Preparing for UP 2027 assembly elections (403 seats) — the most watched upcoming election. Son of SP founder Mulayam Singh Yadav. Source: ECI UP 2022, Lok Sabha 2024.",
+    "source": "ECI 2024 Lok Sabha results; UP Assembly 2022 results — eci.gov.in"
+  },
+  {
+    "id": "6",
+    "name": "Nitish Kumar",
+    "party": "JDU",
+    "partyColor": "#4CAF50",
+    "partySymbol": "Arrow",
+    "constituency": "Bihar CM (Rajya Sabha member)",
+    "state": "Bihar",
+    "role": "Chief Minister of Bihar (9th Term)",
+    "role_since": "October 2025",
+    "image": null,
+    "keyPromises": [
+      "Special Category Status for Bihar — extra central funds for backward state",
+      "Prohibition policy — total alcohol ban maintained in Bihar since 2016",
+      "Bihar women empowerment — Jeevikas (SHG) network; free bicycles for girls"
+    ],
+    "stances": {
+      "economy": "Special state package; Bihar industrial corridor; migrant worker skills and remittances",
+      "education": "Girls bicycle scheme; quality mid-day meals; backward caste scholarships",
+      "health": "Free dialysis centers; district hospital 108 ambulance; snake-bite treatment centers",
+      "farmers": "Flood and drought relief; agricultural diversification; organic farming mission",
+      "environment": "Ganga Jal project (Har Ghar Nal Jal); flood embankment infrastructure"
+    },
+    "background": "Chief Minister of Bihar, now in his 9th term after NDA won 133/243 seats in Bihar October 2025 elections. JDU is a key NDA ally (won 12 LS seats in 2024). Has switched alliances multiple times (NDA/Grand Alliance) but currently stable with BJP as NDA partner. Bihar's next assembly election is due in 2030. Source: ECI Bihar 2025, ECI 2024.",
+    "source": "ECI Bihar Assembly Results Oct 2025; ECI Lok Sabha 2024 — eci.gov.in"
+  },
+  {
+    "id": "7",
+    "name": "MK Stalin",
+    "party": "DMK",
+    "partyColor": "#CC0000",
+    "partySymbol": "Rising Sun",
+    "constituency": "Kolathur, Tamil Nadu",
+    "state": "Tamil Nadu",
+    "role": "Chief Minister of Tamil Nadu (2nd Term)",
+    "role_since": "April 2026",
+    "image": null,
+    "keyPromises": [
+      "Dravidian Model — free welfare schemes: rice, gas, mixie, fan, laptop, gold for poor",
+      "Tamil language and culture protection; oppose Hindi imposition in education",
+      "Kalaignar Magalir Urimai Thogai — ₹1,000/month to women household heads"
+    ],
+    "stances": {
+      "economy": "State-led welfare economy; Tamil Nadu as industrial and IT hub; oppose Centre's fiscal overreach",
+      "education": "Free government school education; oppose NEET; Tamil medium schools support; IIT expansion in TN",
+      "health": "Free universal healthcare; Chief Minister's Comprehensive Health Insurance; generic medicines",
+      "farmers": "Free power to farmers; crop loan waivers; Cauvery water rights advocacy",
+      "environment": "Wetland restoration; oppose Sterlite; clean energy for Tamil Nadu coast"
+    },
+    "background": "Chief Minister of Tamil Nadu for 2nd term after DMK-led alliance swept 178/234 seats in April 2026 elections (DMK alone won 151 seats). First term: May 2021–April 2026. Son of former CM M Karunanidhi. Key INDIA bloc leader and strongest voice for federalism and state rights. DMK won 22 Lok Sabha seats in 2024. Source: ECI Tamil Nadu 2026.",
+    "source": "ECI Tamil Nadu Assembly Results April 2026 — eci.gov.in"
+  },
+  {
+    "id": "8",
+    "name": "Chandrababu Naidu",
+    "party": "TDP",
+    "partyColor": "#FDD835",
+    "partySymbol": "Bicycle",
+    "constituency": "Kuppam, Andhra Pradesh",
+    "state": "Andhra Pradesh",
+    "role": "Chief Minister of Andhra Pradesh",
+    "role_since": "June 2024",
+    "image": null,
+    "keyPromises": [
+      "Amaravati capital city construction — new greenfield capital for Andhra Pradesh",
+      "Super Six welfare promises — free power, ₹1,500/month to women, free bus pass, free gas",
+      "TDP-led NDA development — AP Special Category Status demand"
+    ],
+    "stances": {
+      "economy": "Tech hub development; Amaravati smart capital; attract IT and manufacturing to AP",
+      "education": "English medium in government schools; AP as education hub; Skill Development University",
+      "health": "NTR Vaidya Seva health scheme; free medicines; telemedicine in rural AP",
+      "farmers": "Anna canteens for farmers; crop insurance; Rythu Bharosa cash support to farmers",
+      "environment": "Solar energy in AP; clean Polavaram irrigation project; Godavari water management"
+    },
+    "background": "Chief Minister of Andhra Pradesh since June 2024. TDP-led NDA swept the 2024 AP assembly elections winning 135/175 seats simultaneously with Lok Sabha elections. TDP won 16 Lok Sabha seats — a key NDA coalition ally giving BJP its majority. Previously CM from 1994–2004 and 2014–2019 (as part of NDA). Kingmaker in current NDA coalition. Source: ECI AP 2024.",
+    "source": "ECI Andhra Pradesh 2024 simultaneous elections — eci.gov.in"
+  },
+  {
+    "id": "9",
+    "name": "Devendra Fadnavis",
+    "party": "BJP",
+    "partyColor": "#FF6600",
+    "partySymbol": "Lotus",
+    "constituency": "Nagpur South West, Maharashtra",
+    "state": "Maharashtra",
+    "role": "Chief Minister of Maharashtra",
+    "role_since": "December 2024",
+    "image": null,
+    "keyPromises": [
+      "Mahayuti welfare — Ladki Bahin ₹1,500/month to women; free gas cylinder; ₹3,000 to farmers",
+      "Mumbai infrastructure mega-projects — coastal road, metro network expansion",
+      "Maharashtra as India's #1 economy — attract global investment and industry"
+    ],
+    "stances": {
+      "economy": "Investment-first approach; Maharashtra ₹10 lakh crore economy goal; PPP infrastructure",
+      "education": "Skill development centers; improve rural Marathi medium schools; IIT Bombay expansion",
+      "health": "Mahatma Phule Jan Arogya Yojana; district hospital upgrades; cancer care centers",
+      "farmers": "Kharif crop insurance; Vidarbha farmer debt relief; onion export policy reform",
+      "environment": "Mangrove protection; metro electric mobility; clean Mithi river project Mumbai"
+    },
+    "background": "Chief Minister of Maharashtra after Mahayuti (BJP-SS Shinde-NCP Ajit) swept 230/288 seats in November 2024 elections — the biggest alliance win in Maharashtra history. BJP won 132 seats alone. Previously CM from 2014–2019 and briefly 2019. Key BJP national figure. Source: ECI Maharashtra 2024.",
+    "source": "ECI Maharashtra Assembly Results Nov 2024 — eci.gov.in"
+  },
+  {
+    "id": "10",
+    "name": "Pinarayi Vijayan",
+    "party": "CPI(M)",
+    "partyColor": "#B71C1C",
+    "partySymbol": "Hammer & Sickle",
+    "constituency": "Dharmadom, Kerala",
+    "state": "Kerala",
+    "role": "Chief Minister of Kerala (3rd Term)",
+    "role_since": "April 2026",
+    "image": null,
+    "keyPromises": [
+      "Kerala Model — universal education, healthcare and social security",
+      "K-RAIL SilverLine — semi-high-speed rail connecting all Kerala districts",
+      "Rebuild Kerala from floods; KIIFB infrastructure investment"
+    ],
+    "stances": {
+      "economy": "State-led public investment via KIIFB; knowledge economy; Startup Mission Kerala",
+      "education": "Free universal school education; highest literacy rate maintenance; university autonomy",
+      "health": "Ardram free hospital mission; free medicines at government hospitals; health insurance",
+      "farmers": "Vegetable cultivation support; rubber farmer minimum price; farmer market infrastructure",
+      "environment": "Western Ghats protection; oppose Gadgil report dilution; clean river and backwater mission"
+    },
+    "background": "Chief Minister of Kerala for historic 3rd consecutive term after LDF won 82/140 seats in April 2026 elections. First Kerala CM to win three consecutive terms — a historic achievement as Kerala traditionally alternates between LDF and UDF. CPI(M) state secretary turned CM since 2016. Source: ECI Kerala 2026.",
+    "source": "ECI Kerala Assembly Results April 2026 — eci.gov.in"
+  }
+]

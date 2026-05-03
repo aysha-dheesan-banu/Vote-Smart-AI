@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "source": "VoteSmart AI — Civic Values Quiz based on 2024 Indian election policy positions",
+    "note": "Educational tool only. Not a voting recommendation."
+  },
+  "questions": [
+    { "key": "q1",  "label": "Economic Policy",   "low": "Market-driven growth",  "high": "Government-led welfare",   "icon": "📈" },
+    { "key": "q2",  "label": "Environment",        "low": "Development priority",   "high": "Environment first",        "icon": "🌿" },
+    { "key": "q3",  "label": "Education",          "low": "Private schools",        "high": "Government schools",       "icon": "📚" },
+    { "key": "q4",  "label": "Healthcare",         "low": "Private insurance",      "high": "Universal healthcare",     "icon": "🏥" },
+    { "key": "q5",  "label": "Farmers",            "low": "Market prices",          "high": "MSP & subsidies",          "icon": "🌾" },
+    { "key": "q6",  "label": "Foreign Policy",     "low": "Strategic autonomy",     "high": "Global alliances",         "icon": "🌍" },
+    { "key": "q7",  "label": "Governance",         "low": "Secular",                "high": "Cultural nationalism",     "icon": "⚖️" },
+    { "key": "q8",  "label": "Women's Rights",     "low": "Traditional values",     "high": "Progressive rights",       "icon": "👩" },
+    { "key": "q9",  "label": "Defence",            "low": "Diplomacy first",        "high": "Strong military",          "icon": "🛡️" },
+    { "key": "q10", "label": "Inequality",         "low": "Growth trickles down",   "high": "Direct redistribution",    "icon": "⚖️" }
+  ]
+}

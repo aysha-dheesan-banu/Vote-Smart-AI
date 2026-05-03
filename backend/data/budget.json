@@ -1,0 +1,168 @@
+{
+  "meta": {
+    "election": "18th Lok Sabha General Election 2024",
+    "note": "All figures are estimates unless marked Official. Sources cited per data point.",
+    "primary_sources": [
+      "Election Commission of India Annual Report 2024 — eci.gov.in",
+      "Centre for Media Studies (CMS) India Election Expenditure Study 2024",
+      "Association for Democratic Reforms (ADR) — adrindia.org",
+      "Madison Media India Advertising Report 2024",
+      "Ministry of Home Affairs CAPF Deployment Report 2024",
+      "ECI SVEEP Annual Report 2024",
+      "ECI Notification No. 76/INST/2022/EPS — Candidate Spending Limits"
+    ]
+  },
+  "key_stats": [
+    {
+      "label": "ECI Official Budget",
+      "value": "₹2,800 Cr",
+      "numeric": 2800,
+      "note": "Parliament-approved ECI budget for 2024 elections",
+      "source": "ECI Annual Report 2024 (Official)",
+      "color": "#00f5d4",
+      "official": true
+    },
+    {
+      "label": "Total Estimated Expenditure",
+      "value": "₹1.35 Lakh Cr",
+      "numeric": 135000,
+      "note": "All parties + candidates + ECI combined estimate",
+      "source": "CMS India Study 2024 (Estimate)",
+      "color": "#ff2d7a",
+      "official": false
+    },
+    {
+      "label": "LS Candidate Limit (Large State)",
+      "value": "₹95 Lakh",
+      "numeric": 9500000,
+      "note": "Per candidate — revised from ₹70L in Jan 2022",
+      "source": "ECI Notification No. 76/INST/2022/EPS (Official)",
+      "color": "#ffd700",
+      "official": true
+    },
+    {
+      "label": "Registered Voters",
+      "value": "96.88 Crore",
+      "numeric": 968800000,
+      "note": "Total electoral roll as of April 2024",
+      "source": "ECI Electoral Roll 2024 (Official)",
+      "color": "#4facfe",
+      "official": true
+    }
+  ],
+  "spending_breakdown": [
+    {
+      "name": "Political Parties (All)",
+      "value": 60000,
+      "color": "#ff2d7a",
+      "source": "CMS India Estimates 2024",
+      "details": "Estimated total party spending across all 7 phases — advertising, rallies, ground operations",
+      "official": false
+    },
+    {
+      "name": "Media & Digital Advertising",
+      "value": 20000,
+      "color": "#ff6b35",
+      "source": "Madison Media India Report 2024",
+      "details": "TV, digital (Meta/Google), print, OOH advertising by parties and candidates",
+      "official": false
+    },
+    {
+      "name": "ECI Administration",
+      "value": 2800,
+      "color": "#00f5d4",
+      "source": "ECI Official Budget — Parliament Approved",
+      "details": "EVM procurement, polling staff wages, training, printing, logistics",
+      "official": true
+    },
+    {
+      "name": "Candidate Expenditures (543 seats)",
+      "value": 2000,
+      "color": "#ffd700",
+      "source": "ECI Expenditure Statements (Candidate Affidavits)",
+      "details": "Based on ECI-registered candidate expenditure statements (max ₹95L per LS candidate)",
+      "official": false
+    },
+    {
+      "name": "Security Forces (CAPF Deployment)",
+      "value": 1200,
+      "color": "#4facfe",
+      "source": "MHA CAPF Deployment Report 2024",
+      "details": "3.5 lakh+ Central Armed Police Forces deployed across 7 phases and 10.5L booths",
+      "official": true
+    },
+    {
+      "name": "ECI SVEEP Voter Education",
+      "value": 150,
+      "color": "#43e97b",
+      "source": "ECI SVEEP Annual Report 2024 (Official)",
+      "details": "Systematic Voters' Education and Electoral Participation program — official ECI outreach",
+      "official": true
+    }
+  ],
+  "party_spending": [
+    { "party": "BJP",              "spend": 7000, "color": "#FF6600", "source": "ADR India / Media estimates 2024" },
+    { "party": "INC",              "spend": 1800, "color": "#1E90FF", "source": "ADR India / Media estimates 2024" },
+    { "party": "Regional Parties", "spend": 3200, "color": "#888888", "source": "ADR India aggregate estimate 2024" },
+    { "party": "Independents",     "spend": 600,  "color": "#aaaaaa", "source": "ECI expenditure statement aggregates" }
+  ],
+  "candidate_limits": [
+    {
+      "category": "Lok Sabha — Large States (20+ seats)",
+      "limit": "₹95,00,000",
+      "note": "Revised upward from ₹70L — effective January 6, 2022",
+      "source": "ECI Notification No. 76/INST/2022/EPS"
+    },
+    {
+      "category": "Lok Sabha — Smaller States / UTs",
+      "limit": "₹75,00,000",
+      "note": "For Goa, Himachal Pradesh, UTs with fewer constituencies",
+      "source": "ECI Notification No. 76/INST/2022/EPS"
+    },
+    {
+      "category": "Vidhan Sabha — Large States",
+      "limit": "₹40,00,000",
+      "note": "State assembly elections — large states like UP, Maharashtra",
+      "source": "ECI Notification No. 76/INST/2022/EPS"
+    },
+    {
+      "category": "Vidhan Sabha — Smaller States",
+      "limit": "₹28,00,000",
+      "note": "Smaller state assemblies and UTs",
+      "source": "ECI Notification No. 76/INST/2022/EPS"
+    }
+  ],
+  "verified_facts": [
+    {
+      "claim": "2024 Indian election is the world's most expensive election in history",
+      "verdict": "TRUE (Estimated)",
+      "detail": "CMS India Study estimates ₹1.35 lakh crore (~$16.5 billion) total spend — exceeding the US 2020 Presidential election ($14.4 billion). India's 2019 election ($8.6B) already surpassed the US 2016 election.",
+      "source": "CMS India Study April 2024; Open Secrets US 2020 data"
+    },
+    {
+      "claim": "Lok Sabha candidate spending limit is ₹75 lakh",
+      "verdict": "OUTDATED — Now ₹95 lakh (large states)",
+      "detail": "ECI revised limits in January 2022. Large state LS limit = ₹95 lakh. Smaller state/UT LS limit = ₹75 lakh. The old ₹70L limit was superseded.",
+      "source": "ECI Notification No. 76/INST/2022/EPS, January 6, 2022"
+    },
+    {
+      "claim": "Political parties must disclose all donations above ₹20,000",
+      "verdict": "TRUE",
+      "detail": "Under Section 29C of the Representation of the People Act 1951, parties must file contribution reports for donations above ₹20,000. Cash donations above ₹2,000 are prohibited under Section 13A of IT Act.",
+      "source": "RPA 1951 Section 29C; Income Tax Act Section 13A"
+    },
+    {
+      "claim": "642 million people voted in 2024 — highest ever globally",
+      "verdict": "TRUE",
+      "detail": "Approximately 64.2 crore (642 million) votes were cast in the 2024 Lok Sabha election at a 65.79% turnout. This is the highest number of votes cast in any election in human history.",
+      "source": "ECI Post-Election Analysis Report 2024"
+    }
+  ],
+  "reporting_channels": [
+    { "name": "cVIGIL App (ECI)",         "detail": "Real-time violation reporting with GPS — 100-minute response", "url": "https://cvigil.eci.gov.in" },
+    { "name": "Voter Helpline 1950",       "detail": "Toll-free, 24x7 during election period",                      "url": null },
+    { "name": "ADR India",                 "detail": "Independent election finance watchdog",                        "url": "https://adrindia.org" },
+    { "name": "MyNeta (ADR)",              "detail": "Candidate asset declarations from ECI affidavits",             "url": "https://myneta.info" },
+    { "name": "ECI Expenditure Monitoring","detail": "Official ECI page tracking candidate spending",                "url": "https://eci.gov.in/expenditure-monitoring" }
+  ]
+}
