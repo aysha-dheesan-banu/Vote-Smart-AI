@@ -36,7 +36,11 @@ export default function Callback() {
       const verifier = sessionStorage.getItem('pkce_verifier')
       
       const isProd = window.location.hostname === 'project.dhilip.in'
-      const ssoUrl = import.meta.env.VITE_SSO_URL || (isProd ? 'https://wytnet.com' : 'http://localhost:8000')
+      // Force https://wytnet.com in production if the env var is missing or points to the old IP
+      const ssoUrl = (isProd && (!import.meta.env.VITE_SSO_URL || import.meta.env.VITE_SSO_URL.includes('72.61.174.122')))
+        ? 'https://wytnet.com' 
+        : (import.meta.env.VITE_SSO_URL || 'http://localhost:8000')
+
       const redirectUri = window.location.origin + '/callback'
       
       try {
