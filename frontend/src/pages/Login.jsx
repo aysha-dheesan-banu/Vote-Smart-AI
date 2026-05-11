@@ -21,11 +21,9 @@ export default function Login() {
 
       const isProd = window.location.hostname === 'project.dhilip.in'
       
-      // SSO Frontend URL (for the consent screen)
-      const ssoFrontend = (isProd && (!import.meta.env.VITE_SSO_URL || import.meta.env.VITE_SSO_URL.includes('72.61.174.122')))
-        ? 'https://wytnet.com' 
-        : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
-
+      // The consent screen is ALWAYS on the frontend domain
+      const ssoFrontend = isProd ? 'https://wytnet.com' : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
+      
       const redirectUri = window.location.origin + '/callback'
       const authPath = isProd ? '/consent/authorize' : '/oauth/authorize'
 
