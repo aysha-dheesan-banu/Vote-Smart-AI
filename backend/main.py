@@ -25,6 +25,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi.staticfiles import StaticFiles
+
 app.include_router(chat.router, prefix="/api")
 app.include_router(factcheck.router, prefix="/api")
 app.include_router(constituency.router, prefix="/api")
@@ -32,6 +34,11 @@ app.include_router(candidates.router, prefix="/api")
 app.include_router(timeline.router, prefix="/api")
 app.include_router(values.router, prefix="/api")
 app.include_router(data.router, prefix="/api")
+
+# Serve frontend files from /static directory
+# This must be at the end so it doesn't catch /api routes
+if os.path.exists("static"):
+    app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 
 @app.get("/health")
