@@ -53,14 +53,21 @@ export default function Callback() {
           code_verifier: verifier,
         })
 
+        console.log('Exchanging code for tokens at:', `${ssoUrl}/oauth/token`)
+        
         const resp = await fetch(`${ssoUrl}/oauth/token`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body,
+        }).catch(err => {
+          if (ssoUrl.startsWith('http://') && window.location.protocol === 'https:') {
+            throw new Error('Insecure connection blocked. Your SSO URL must be HTTPS in production.')
+          }
+          throw err
         })
 
         if (!resp.ok) {
-          const errData = await resp.json()
+          const errData = await resp.json().catch(() => ({}))
           throw new Error(errData.error_description || 'Failed to exchange code')
         }
 
@@ -68,22 +75,20 @@ export default function Callback() {
 
         // 3. Save tokens
         localStorage.setItem('access_token', tokens.access_token)
-        localStorage.setItem('refresh_token', tokens.refresh_token)
-        localStorage.setItem('id_token', tokens.id_token)
+        if (tokens.refresh_token) localStorage.setItem('refresh_token', tokens.refresh_token)
+        if (tokens.id_token) localStorage.setItem('id_token', tokens.id_token)
 
-        // 4. Get User Info or use ID Token claims
+        // 4. Get User Info
         const userResp = await fetch(`${ssoUrl}/oauth/userinfo`, {
           headers: { 'Authorization': `Bearer ${tokens.access_token}` }
         })
         
         if (!userResp.ok) throw new Error('Failed to fetch user info')
-        
         const userData = await userResp.json()
         
-        // Map SSO user to app user
         const user = {
           id: userData.sub,
-          name: userData.name || userData.email.split('@')[0],
+          name: userData.name || userData.email?.split('@')[0] || 'User',
           email: userData.email,
           picture: userData.picture
         }
@@ -91,16 +96,16 @@ export default function Callback() {
         localStorage.setItem('vs_user', JSON.stringify(user))
         setUser(user)
         
-        // 5. Cleanup
+        // 5. Cleanup and redirect
         sessionStorage.removeItem('oauth_state')
         sessionStorage.removeItem('pkce_verifier')
 
         toast.success(`Welcome, ${user.name}!`)
-        navigate('/home')
+        navigate('/home', { replace: true })
       } catch (err) {
-        console.error('SSO Error:', err)
-        toast.error(err.message)
-        navigate('/login')
+        console.error('SSO Callback Error:', err)
+        toast.error(err.message || 'Login failed')
+        navigate('/login', { replace: true })
       }
     }
 
