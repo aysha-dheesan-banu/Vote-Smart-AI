@@ -1,0 +1,112 @@
+import React, { useEffect, useContext } from 'react'
+import { useNavigate } from 'react-router-dom'
+import toast from 'react-hot-toast'
+import { AuthContext } from '../App'
+
+export default function Callback() {
+  const navigate = useNavigate()
+  const { setUser } = useContext(AuthContext)
+
+  useEffect(() => {
+    const handleCallback = async () => {
+      const params = new URLSearchParams(window.location.search)
+      const code = params.get('code')
+      const state = params.get('state')
+      const error = params.get('error')
+
+      if (error) {
+        toast.error(`Auth Error: ${error}`)
+        navigate('/login')
+        return
+      }
+
+      if (!code) {
+        navigate('/login')
+        return
+      }
+
+      // 1. Verify state
+      const savedState = sessionStorage.getItem('oauth_state')
+      if (state !== savedState) {
+        toast.error('Invalid state - potential CSRF attack')
+        navigate('/login')
+        return
+      }
+
+      const verifier = sessionStorage.getItem('pkce_verifier')
+      
+      try {
+        // 2. Exchange code for tokens
+        const body = new URLSearchParams({
+          grant_type: 'authorization_code',
+          code,
+          redirect_uri: import.meta.env.VITE_REDIRECT_URI,
+          client_id: import.meta.env.VITE_CLIENT_ID,
+          code_verifier: verifier,
+        })
+
+        const resp = await fetch(`${import.meta.env.VITE_SSO_URL}/oauth/token`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body,
+        })
+
+        if (!resp.ok) {
+          const errData = await resp.json()
+          throw new Error(errData.error_description || 'Failed to exchange code')
+        }
+
+        const tokens = await resp.json()
+
+        // 3. Save tokens
+        localStorage.setItem('access_token', tokens.access_token)
+        localStorage.setItem('refresh_token', tokens.refresh_token)
+        localStorage.setItem('id_token', tokens.id_token)
+
+        // 4. Get User Info or use ID Token claims
+        // For simplicity, we'll parse the ID token or fetch userinfo
+        const userResp = await fetch(`${import.meta.env.VITE_SSO_URL}/oauth/userinfo`, {
+          headers: { 'Authorization': `Bearer ${tokens.access_token}` }
+        })
+        
+        if (!userResp.ok) throw new Error('Failed to fetch user info')
+        
+        const userData = await userResp.json()
+        
+        // Map SSO user to app user
+        const user = {
+          id: userData.sub,
+          name: userData.name || userData.email.split('@')[0],
+          email: userData.email,
+          picture: userData.picture
+        }
+
+        localStorage.setItem('vs_user', JSON.stringify(user))
+        setUser(user)
+        
+        // 5. Cleanup
+        sessionStorage.removeItem('oauth_state')
+        sessionStorage.removeItem('pkce_verifier')
+
+        toast.success(`Welcome, ${user.name}!`)
+        navigate('/home')
+      } catch (err) {
+        console.error('SSO Error:', err)
+        toast.error(err.message)
+        navigate('/login')
+      }
+    }
+
+    handleCallback()
+  }, [navigate, setUser])
+
+  return (
+    <div className="min-h-screen bg-dark flex items-center justify-center">
+      <div className="text-center">
+        <div className="animate-spin text-4xl mb-4">🗳️</div>
+        <h2 className="text-xl font-sora font-bold">Completing sign in...</h2>
+        <p className="text-white/50 text-sm mt-2">Please wait while we verify your credentials.</p>
+      </div>
+    </div>
+  )
+}

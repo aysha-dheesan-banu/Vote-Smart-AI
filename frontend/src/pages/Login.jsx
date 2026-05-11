@@ -3,12 +3,38 @@ import { useNavigate, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import toast from 'react-hot-toast'
 import { AuthContext } from '../App'
+import { createPKCE } from '../utils/pkce'
 
 export default function Login() {
   const navigate = useNavigate()
   const { setUser } = useContext(AuthContext)
   const [form, setForm] = useState({ email: '', password: '' })
   const [loading, setLoading] = useState(false)
+
+  const handleSSO = async () => {
+    try {
+      const { verifier, challenge } = await createPKCE();
+      const state = crypto.randomUUID();
+
+      sessionStorage.setItem('pkce_verifier', verifier);
+      sessionStorage.setItem('oauth_state', state);
+
+      const params = new URLSearchParams({
+        response_type: 'code',
+        client_id: import.meta.env.VITE_CLIENT_ID,
+        redirect_uri: import.meta.env.VITE_REDIRECT_URI,
+        scope: 'openid profile email',
+        state,
+        code_challenge: challenge,
+        code_challenge_method: 'S256',
+      });
+
+      window.location.href = `${import.meta.env.VITE_SSO_URL}/oauth/authorize?${params}`;
+    } catch (err) {
+      console.error('SSO Redirect Error:', err);
+      toast.error('Failed to start SSO flow');
+    }
+  }
 
   const submit = async (e) => {
     e.preventDefault()
@@ -71,6 +97,19 @@ export default function Login() {
                 {loading ? 'Signing in...' : 'Sign In →'}
               </button>
             </form>
+
+            <div className="relative my-8">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/10"></div></div>
+              <div className="relative flex justify-center text-xs uppercase"><span className="bg-card px-2 text-white/40">Or continue with</span></div>
+            </div>
+
+            <button 
+              onClick={handleSSO}
+              className="w-full bg-white text-black py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-white/90 transition-colors mb-4"
+            >
+              <span className="text-xl">🛡️</span>
+              Sign in with WytPass SSO
+            </button>
 
             <p className="text-center text-sm text-white/40 mt-6">
               Don't have an account?{' '}

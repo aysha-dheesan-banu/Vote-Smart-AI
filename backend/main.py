@@ -41,6 +41,13 @@ if os.path.exists("static"):
     app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 
+from services.auth import get_current_user
+from fastapi import Depends
+
+@app.get("/api/me")
+async def get_me(user: dict = Depends(get_current_user)):
+    return user
+
 @app.get("/health")
 async def health():
     return {"status": "ok", "service": "VoteSmart AI"}

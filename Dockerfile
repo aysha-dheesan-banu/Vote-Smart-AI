@@ -5,7 +5,10 @@ COPY frontend/package*.json ./
 RUN npm ci
 COPY frontend/ ./
 # Use empty string for VITE_API_URL so it uses relative paths (current origin)
-RUN VITE_API_URL= npm run build
+ARG VITE_SSO_URL
+ARG VITE_CLIENT_ID
+ARG VITE_REDIRECT_URI
+RUN VITE_API_URL= VITE_SSO_URL=$VITE_SSO_URL VITE_CLIENT_ID=$VITE_CLIENT_ID VITE_REDIRECT_URI=$VITE_REDIRECT_URI npm run build
 
 # Stage 2: Final Image
 FROM python:3.11-slim

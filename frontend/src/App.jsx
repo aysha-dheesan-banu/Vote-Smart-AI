@@ -16,6 +16,7 @@ export const AuthContext = createContext({ user: null, logout: () => {} })
 const Landing = lazy(() => import('./pages/Landing'))
 const Login   = lazy(() => import('./pages/Login'))
 const Signup  = lazy(() => import('./pages/Signup'))
+const Callback = lazy(() => import('./pages/Callback'))
 
 // Protected pages
 const Home         = lazy(() => import('./pages/Home'))
@@ -135,6 +136,9 @@ export default function App() {
 
   const logout = () => {
     localStorage.removeItem('vs_user')
+    localStorage.removeItem('access_token')
+    localStorage.removeItem('refresh_token')
+    localStorage.removeItem('id_token')
     setUser(null)
   }
 
@@ -152,6 +156,7 @@ export default function App() {
                   <Route path="/"       element={user ? <Navigate to="/home" replace /> : <Landing />} />
                   <Route path="/login"  element={user ? <Navigate to="/home" replace /> : <Login />} />
                   <Route path="/signup" element={user ? <Navigate to="/home" replace /> : <Signup />} />
+                  <Route path="/callback" element={<Callback />} />
                   {/* Protected — all other routes inside AppShell */}
                   <Route path="/*" element={<AppShell />} />
                 </Routes>
