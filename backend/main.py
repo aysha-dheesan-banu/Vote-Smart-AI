@@ -35,11 +35,25 @@ app.include_router(timeline.router, prefix="/api")
 app.include_router(values.router, prefix="/api")
 app.include_router(data.router, prefix="/api")
 
-# Serve frontend files from /static directory
-# This must be at the end so it doesn't catch /api routes
-if os.path.exists("static"):
-    app.mount("/", StaticFiles(directory="static", html=True), name="static")
+from fastapi.responses import FileResponse
 
+# Serve frontend files from /static directory
+if os.path.exists("static"):
+    # 1. Mount static directory for existing files (css, js, etc.)
+    app.mount("/static", StaticFiles(directory="static"), name="static_assets")
+    
+    # 2. Fallback for SPA routing (all non-api routes return index.html)
+    @app.get("/{full_path:path}")
+    async def serve_spa(full_path: str):
+        # If it starts with api/, health, or is an existing file, let it through
+        if full_path.startswith("api/") or full_path == "health":
+            raise HTTPException(status_code=404)
+        
+        file_path = os.path.join("static", full_path)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+            
+        return FileResponse("static/index.html")
 
 from services.auth import get_current_user
 from fastapi import Depends
