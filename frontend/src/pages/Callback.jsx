@@ -40,7 +40,9 @@ export default function Callback() {
         const body = new URLSearchParams({
           grant_type: 'authorization_code',
           code,
-          redirect_uri: import.meta.env.VITE_REDIRECT_URI,
+          redirect_uri: import.meta.env.VITE_REDIRECT_URI?.toLowerCase().endsWith('/callback') 
+            ? import.meta.env.VITE_REDIRECT_URI.toLowerCase() 
+            : (import.meta.env.VITE_REDIRECT_URI?.toLowerCase() || 'http://localhost:5173') + '/callback',
           client_id: import.meta.env.VITE_CLIENT_ID,
           code_verifier: verifier,
         })

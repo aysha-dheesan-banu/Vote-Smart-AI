@@ -22,7 +22,9 @@ export default function Login() {
       const params = new URLSearchParams({
         response_type: 'code',
         client_id: import.meta.env.VITE_CLIENT_ID,
-        redirect_uri: import.meta.env.VITE_REDIRECT_URI,
+        redirect_uri: import.meta.env.VITE_REDIRECT_URI?.toLowerCase().endsWith('/callback') 
+          ? import.meta.env.VITE_REDIRECT_URI.toLowerCase() 
+          : (import.meta.env.VITE_REDIRECT_URI?.toLowerCase() || 'http://localhost:5173') + '/callback',
         scope: 'openid profile email',
         state,
         code_challenge: challenge,
