@@ -35,19 +35,21 @@ export default function Callback() {
 
       const verifier = sessionStorage.getItem('pkce_verifier')
       
+      const isProd = window.location.hostname === 'project.dhilip.in'
+      const ssoUrl = import.meta.env.VITE_SSO_URL || (isProd ? 'https://wytnet.com' : 'http://localhost:8000')
+      const redirectUri = window.location.origin + '/callback'
+      
       try {
         // 2. Exchange code for tokens
         const body = new URLSearchParams({
           grant_type: 'authorization_code',
           code,
-          redirect_uri: import.meta.env.VITE_REDIRECT_URI?.toLowerCase().endsWith('/callback') 
-            ? import.meta.env.VITE_REDIRECT_URI.toLowerCase() 
-            : (import.meta.env.VITE_REDIRECT_URI?.toLowerCase() || 'http://localhost:5173') + '/callback',
-          client_id: import.meta.env.VITE_CLIENT_ID,
+          redirect_uri: redirectUri,
+          client_id: import.meta.env.VITE_CLIENT_ID || 'client_5XUv807ZGIcV5LG0R-CE6w',
           code_verifier: verifier,
         })
 
-        const resp = await fetch(`${import.meta.env.VITE_SSO_URL}/oauth/token`, {
+        const resp = await fetch(`${ssoUrl}/oauth/token`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body,
@@ -66,8 +68,7 @@ export default function Callback() {
         localStorage.setItem('id_token', tokens.id_token)
 
         // 4. Get User Info or use ID Token claims
-        // For simplicity, we'll parse the ID token or fetch userinfo
-        const userResp = await fetch(`${import.meta.env.VITE_SSO_URL}/oauth/userinfo`, {
+        const userResp = await fetch(`${ssoUrl}/oauth/userinfo`, {
           headers: { 'Authorization': `Bearer ${tokens.access_token}` }
         })
         

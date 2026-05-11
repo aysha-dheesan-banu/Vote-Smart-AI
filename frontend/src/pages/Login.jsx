@@ -19,19 +19,21 @@ export default function Login() {
       sessionStorage.setItem('pkce_verifier', verifier);
       sessionStorage.setItem('oauth_state', state);
 
+      const isProd = window.location.hostname === 'project.dhilip.in'
+      const ssoUrl = import.meta.env.VITE_SSO_URL || (isProd ? 'https://wytnet.com' : 'http://localhost:8000')
+      const redirectUri = window.location.origin + '/callback'
+
       const params = new URLSearchParams({
         response_type: 'code',
-        client_id: import.meta.env.VITE_CLIENT_ID,
-        redirect_uri: import.meta.env.VITE_REDIRECT_URI?.toLowerCase().endsWith('/callback') 
-          ? import.meta.env.VITE_REDIRECT_URI.toLowerCase() 
-          : (import.meta.env.VITE_REDIRECT_URI?.toLowerCase() || 'http://localhost:5173') + '/callback',
+        client_id: import.meta.env.VITE_CLIENT_ID || 'client_5XUv807ZGIcV5LG0R-CE6w',
+        redirect_uri: redirectUri,
         scope: 'openid profile email',
         state,
         code_challenge: challenge,
         code_challenge_method: 'S256',
       });
 
-      window.location.href = `${import.meta.env.VITE_SSO_URL}/oauth/authorize?${params}`;
+      window.location.href = `${ssoUrl}/oauth/authorize?${params}`;
     } catch (err) {
       console.error('SSO Redirect Error:', err);
       toast.error('Failed to start SSO flow');

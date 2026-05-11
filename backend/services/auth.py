@@ -6,7 +6,9 @@ from fastapi import Header, HTTPException, Depends
 from typing import Optional
 
 # Configuration
-ISSUER = os.getenv("SSO_ISSUER", "http://localhost:8000")
+# Default to production URL if not on localhost
+SSO_ISSUER_DEFAULT = "https://wytnet.com" if os.getenv("ENV") == "production" else "http://localhost:8000"
+ISSUER = os.getenv("SSO_ISSUER", SSO_ISSUER_DEFAULT)
 AUDIENCE = os.getenv("SSO_CLIENT_ID", "client_5XUv807ZGIcV5LG0R-CE6w")
 
 @lru_cache
