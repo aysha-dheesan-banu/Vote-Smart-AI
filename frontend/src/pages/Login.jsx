@@ -20,11 +20,12 @@ export default function Login() {
       sessionStorage.setItem('oauth_state', state);
 
       const isProd = window.location.hostname === 'project.dhilip.in'
-      // Force https://wytnet.com in production if the env var is missing or points to the old IP
-      const ssoBase = (isProd && (!import.meta.env.VITE_SSO_URL || import.meta.env.VITE_SSO_URL.includes('72.61.174.122')))
-        ? 'https://wytnet.com' 
-        : (import.meta.env.VITE_SSO_URL || 'http://localhost:8000')
       
+      // SSO Frontend URL (for the consent screen)
+      const ssoFrontend = (isProd && (!import.meta.env.VITE_SSO_URL || import.meta.env.VITE_SSO_URL.includes('72.61.174.122')))
+        ? 'https://wytnet.com' 
+        : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
+
       const redirectUri = window.location.origin + '/callback'
       const authPath = isProd ? '/consent/authorize' : '/oauth/authorize'
 
@@ -38,7 +39,7 @@ export default function Login() {
         code_challenge_method: 'S256',
       });
 
-      window.location.href = `${ssoBase}${authPath}?${params}`;
+      window.location.href = `${ssoFrontend}${authPath}?${params}`;
     } catch (err) {
       console.error('SSO Redirect Error:', err);
       toast.error('Failed to start SSO flow');
