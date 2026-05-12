@@ -29,7 +29,7 @@ export default function Login() {
 
       const params = new URLSearchParams({
         response_type: 'code',
-        client_id: import.meta.env.VITE_CLIENT_ID || 'client_5XUv807ZGIcV5LG0R-CE6w',
+        client_id: import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg',
         redirect_uri: redirectUri,
         scope: 'openid profile email',
         state,

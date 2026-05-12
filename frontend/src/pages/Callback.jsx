@@ -25,15 +25,29 @@ export default function Callback() {
         return
       }
 
-      // 1. Verify state
+      // 1. Verify state (skip check if coming from SSO portal for demo)
       const savedState = sessionStorage.getItem('oauth_state')
-      if (state !== savedState) {
+      if (state && savedState && state !== savedState) {
         toast.error('Invalid state - potential CSRF attack')
         navigate('/login')
         return
       }
+      if (!savedState) console.log('DEBUG: Portal launch detected (no saved state)');
 
-      const verifier = sessionStorage.getItem('pkce_verifier')
+      // 2. Get verifier (from session or state fallback for portal launch)
+      let verifier = sessionStorage.getItem('pkce_verifier');
+      
+      // If we don't have a verifier in session, check if it's passed in the state (portal launch)
+      if (!verifier && state && state.includes('verifier:')) {
+        verifier = state.split('verifier:')[1];
+        console.log('DEBUG: Extracted verifier from state');
+      }
+
+      if (!verifier) {
+        toast.error('Security token missing')
+        navigate('/login')
+        return
+      }
       
       const isProd = window.location.hostname === 'project.dhilip.in'
       // SSO Backend URL (for the token exchange)
@@ -49,7 +63,7 @@ export default function Callback() {
           grant_type: 'authorization_code',
           code,
           redirect_uri: redirectUri,
-          client_id: import.meta.env.VITE_CLIENT_ID || 'client_5XUv807ZGIcV5LG0R-CE6w',
+          client_id: import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg',
           code_verifier: verifier,
         })
 

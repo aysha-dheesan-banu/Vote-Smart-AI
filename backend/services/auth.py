@@ -9,7 +9,7 @@ from typing import Optional
 # Default to production URL if not on localhost
 SSO_ISSUER_DEFAULT = "https://wytnet.com" if os.getenv("ENV") == "production" else "http://localhost:8000"
 ISSUER = os.getenv("SSO_ISSUER", SSO_ISSUER_DEFAULT)
-AUDIENCE = os.getenv("SSO_CLIENT_ID", "client_5XUv807ZGIcV5LG0R-CE6w")
+AUDIENCE = os.getenv("SSO_CLIENT_ID", "client_Qp_NU6L_ltuKCTOfnL4KGg")
 
 @lru_cache
 def get_jwks():
