@@ -2,19 +2,19 @@ from dotenv import load_dotenv
 load_dotenv()  # must run before any router imports so env vars are set
 
 import os
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from routers import chat, factcheck, constituency, candidates, timeline, values, data
 
 app = FastAPI(title="VoteSmart AI API", version="1.0.0")
 
 # In production (Cloud Run), allow all origins since frontend URL is dynamic
-FRONTEND_URL = os.getenv("FRONTEND_URL", "")
-origins = ["*"] if FRONTEND_URL == "" else [
+FRONTEND_URL = os.getenv("FRONTEND_URL", "https://project.dhilip.in")
+origins = [
     FRONTEND_URL,
+    FRONTEND_URL.rstrip('/'),
+    "https://project.dhilip.in",
     "http://localhost:5173", "http://127.0.0.1:5173",
-    "http://localhost:5174", "http://127.0.0.1:5174",
-    "http://localhost:5175", "http://127.0.0.1:5175",
 ]
 
 app.add_middleware(
