@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import toast from 'react-hot-toast'
 import { AuthContext } from '../App'
 import { createPKCE } from '../utils/pkce'
+import { Shield } from 'lucide-react'
 
 export default function Login() {
   const navigate = useNavigate()
@@ -25,7 +26,7 @@ export default function Login() {
       const ssoFrontend = isProd ? 'https://wytnet.com' : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
       
       const redirectUri = window.location.origin + '/callback'
-      const authPath = isProd ? '/consent/authorize' : '/oauth/authorize'
+      const authPath = '/consent/authorize'
 
       const params = new URLSearchParams({
         response_type: 'code',
@@ -71,7 +72,7 @@ export default function Login() {
 
       <div className="flex-1 flex items-center justify-center px-4 py-12">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-md">
-          <div className="bg-card border border-border rounded-3xl p-8">
+          <div className="bg-card border border-border rounded-3xl p-6 sm:p-8">
             <div className="text-center mb-8">
               <span className="text-4xl">🗳️</span>
               <h1 className="font-sora font-bold text-2xl mt-3 mb-1">Welcome back</h1>
@@ -106,17 +107,17 @@ export default function Login() {
               </button>
             </form>
 
-            <div className="relative my-8">
-              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/10"></div></div>
-              <div className="relative flex justify-center text-xs uppercase"><span className="bg-card px-2 text-white/40">Or continue with</span></div>
+            <div className="relative my-6">
+              <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/5"></div></div>
+              <div className="relative flex justify-center text-[10px] uppercase tracking-wider font-bold"><span className="bg-card px-3 text-white/30">Or continue with</span></div>
             </div>
 
             <button 
               onClick={handleSSO}
-              className="w-full bg-white text-black py-3 px-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-white/90 transition-colors mb-4"
+              className="w-full bg-white text-black py-2.5 px-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/90 transition-all active:scale-[0.98] mb-3 shadow-sm border border-black/5"
             >
-              <span className="text-xl">🛡️</span>
-              Sign in with WytPass SSO
+              <Shield className="w-5 h-5 text-primary" />
+              <span className="text-sm">Sign in with WytPass SSO</span>
             </button>
 
             <p className="text-center text-sm text-white/40 mt-6">
