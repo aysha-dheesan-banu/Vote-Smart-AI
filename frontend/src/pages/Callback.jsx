@@ -51,9 +51,10 @@ export default function Callback() {
       
       const isProd = window.location.hostname === 'project.dhilip.in'
       // SSO Backend URL (for the token exchange)
-      const ssoUrl = (isProd && (!import.meta.env.VITE_SSO_URL || import.meta.env.VITE_SSO_URL.includes('72.61.174.122')))
+      // SSO Backend URL (ALWAYS use api.wytnet.com for production token exchange)
+      const ssoUrl = isProd 
         ? 'https://api.wytnet.com' 
-        : (import.meta.env.VITE_SSO_URL || 'http://localhost:8000')
+        : (import.meta.env.VITE_SSO_BACKEND_URL || import.meta.env.VITE_SSO_URL || 'http://localhost:8000')
 
       const redirectUri = window.location.origin + '/callback'
       
