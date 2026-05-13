@@ -22,15 +22,16 @@ export default function Login() {
 
       const isProd = window.location.hostname === 'project.dhilip.in'
       
-      // The consent screen is ALWAYS on the frontend domain
+      // Force correct production values to bypass environment variable issues
       const ssoFrontend = isProd ? 'https://wytnet.com' : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
+      const ssoClientId = isProd ? 'client_Qp_NU6L_ltuKCTOfnL4KGg' : (import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg')
       
       const redirectUri = window.location.origin + '/callback'
       const authPath = '/consent/authorize'
 
       const params = new URLSearchParams({
         response_type: 'code',
-        client_id: import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg',
+        client_id: ssoClientId,
         redirect_uri: redirectUri,
         scope: 'openid profile email',
         state,
