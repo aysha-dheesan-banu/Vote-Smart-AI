@@ -49,14 +49,13 @@ export default function Callback() {
         return
       }
       
-      const isProd = window.location.hostname === 'project.dhilip.in'
+      const isProd = window.location.hostname === 'project.dhilip.in' || import.meta.env.PROD;
       // SSO Backend URL (for the token exchange)
-      // SSO Backend URL (ALWAYS use api.wytnet.com for production token exchange)
-      const ssoUrl = isProd 
-        ? 'https://api.wytnet.com' 
-        : (import.meta.env.VITE_SSO_BACKEND_URL || import.meta.env.VITE_SSO_URL || 'http://localhost:8000')
+      const ssoUrl = import.meta.env.VITE_SSO_BACKEND_URL || 
+                    import.meta.env.VITE_SSO_URL || 
+                    (isProd ? 'https://api.wytnet.com' : 'http://localhost:8000');
 
-      const redirectUri = window.location.origin + '/callback'
+      const redirectUri = import.meta.env.VITE_REDIRECT_URI || (window.location.origin + '/callback');
       
       try {
         // 2. Exchange code for tokens

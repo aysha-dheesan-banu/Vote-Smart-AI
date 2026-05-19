@@ -4,7 +4,7 @@ load_dotenv()  # must run before any router imports so env vars are set
 import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from routers import chat, factcheck, constituency, candidates, timeline, values, data
+from routers import chat, factcheck, constituency, candidates, timeline, values, data, wytsaas
 
 app = FastAPI(title="VoteSmart AI API", version="1.0.0")
 
@@ -34,6 +34,7 @@ app.include_router(candidates.router, prefix="/api")
 app.include_router(timeline.router, prefix="/api")
 app.include_router(values.router, prefix="/api")
 app.include_router(data.router, prefix="/api")
+app.include_router(wytsaas.router)  # WytSaaS marketplace integration
 
 from fastapi.responses import FileResponse
 

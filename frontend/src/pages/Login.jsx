@@ -20,14 +20,14 @@ export default function Login() {
       sessionStorage.setItem('pkce_verifier', verifier);
       sessionStorage.setItem('oauth_state', state);
 
-      const isProd = window.location.hostname === 'project.dhilip.in'
+      const isProd = window.location.hostname === 'project.dhilip.in' || import.meta.env.PROD;
       
-      // Force correct production values to bypass environment variable issues
-      const ssoFrontend = isProd ? 'https://wytnet.com' : (import.meta.env.VITE_SSO_URL || 'http://localhost:3000')
-      const ssoClientId = isProd ? 'client_Qp_NU6L_ltuKCTOfnL4KGg' : (import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg')
+      // Use environment variables if available, fall back to hardcoded production/local values
+      const ssoFrontend = import.meta.env.VITE_SSO_URL || (isProd ? 'https://wytnet.com' : 'http://localhost:3000');
+      const ssoClientId = import.meta.env.VITE_CLIENT_ID || 'client_Qp_NU6L_ltuKCTOfnL4KGg';
       
-      const redirectUri = window.location.origin + '/callback'
-      const authPath = '/consent/authorize'
+      const redirectUri = import.meta.env.VITE_REDIRECT_URI || (window.location.origin + '/callback');
+      const authPath = '/consent/authorize';
 
       const params = new URLSearchParams({
         response_type: 'code',

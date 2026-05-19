@@ -1,5 +1,9 @@
 substitutions:
   _GEMINI_API_KEY: ''   # passed at submit time via --substitutions
+  _WYTSAAS_APP_ID: 'APP_dub918f4c85'
+  _WYTSAAS_API_KEY: 'wytsk_live_cfcc52836968d265f008ab61'
+  _WYTSAAS_WEBHOOK_SECRET: 'whsec_c452391be67d61bd2acd5c47'
+  _WYTSAAS_API_BASE: 'https://api.wytnet.com'
 
 steps:
   # ─── BACKEND ────────────────────────────────────────────────────────────────
@@ -35,7 +39,7 @@ steps:
       - --cpu=1
       - --min-instances=0
       - --max-instances=5
-      - --set-env-vars=GEMINI_API_KEY=${_GEMINI_API_KEY}
+      - --set-env-vars=GEMINI_API_KEY=${_GEMINI_API_KEY},WYTSAAS_APP_ID=${_WYTSAAS_APP_ID},WYTSAAS_API_KEY=${_WYTSAAS_API_KEY},WYTSAAS_WEBHOOK_SECRET=${_WYTSAAS_WEBHOOK_SECRET},WYTSAAS_API_BASE=${_WYTSAAS_API_BASE}
 
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     id: get-backend-url
